@@ -25,11 +25,23 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
+						<Route exact path="/login">
+							<Login />
 						</Route>
-						<Route exact path="/single/:theid">
-							<Single />
+						<Route exact path="/tareas">
+							<Tareas />
+						</Route>
+						<Route exact path="/pomodoro">
+							<Pomodoro />
+						</Route>
+						<Route exact path="/planner">
+							<Planner />
+						</Route>
+						<Route exact path="/reproductor">
+							<Reproductor />
+						</Route>
+						<Route exact path="/cuaderno">
+							<Cuaderno />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>
