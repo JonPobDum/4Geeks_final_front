@@ -2,9 +2,9 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 
-export const Home = () => { 
+export const Home (props) { 
 	return (  
-	 <div className="text-center mt-5">
+	 <div className="home">
 			<Navbar/>
 		<button>Empecemos</button>
 		<h1>Brain Manager</h1>
