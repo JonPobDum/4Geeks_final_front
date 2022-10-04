@@ -6,6 +6,6 @@ export const Play = () => (
         <div className="play_move">
             <div className="circulo"></div>
         </div>
-
+        
     </div>
 )
