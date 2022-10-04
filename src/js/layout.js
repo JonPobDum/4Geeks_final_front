@@ -27,7 +27,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/demo">
 							<Demo />
-						</Route>
+						git</Route>
 						<Route exact path="/pomodoro">
 							<Pomodoro />
 						</Route>
