@@ -28,5 +28,4 @@ export const Home = () => (
 	
 	
 	</div>
-
 );
