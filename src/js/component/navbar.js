@@ -4,7 +4,7 @@ import logoimagen from "../../img/logo.jpg"
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+		<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div className="container-fluid">
 				<Link to="/">
 					<div className="navbar-brand">
