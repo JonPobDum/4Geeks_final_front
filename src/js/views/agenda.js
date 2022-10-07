@@ -34,7 +34,7 @@ export const Agenda = () => {
         { label: `${e.target[0].value}`, done: false },
       ]),
     })
-      .then((res) => console.log(res))
+      .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
   };
