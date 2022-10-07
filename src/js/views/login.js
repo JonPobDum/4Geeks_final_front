@@ -51,8 +51,8 @@ export const Login = () =>{
             </div>
           </div>
           <div className="btn btn-light d-flex gap-2 justify-content-center border mt-3 shadow-sm">
-            <img className="img_3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"></img>
-            <div className="fw-semibold text-secondary"> Continue with Facebook</div>
+            <img className="img_3" src="https://freesvg.org/img/1534129544.png"></img>
+            <div className="fw-semibold text-secondary"> Continue with Google</div>
         </div>
           </div>
          
