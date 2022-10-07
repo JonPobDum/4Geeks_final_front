@@ -109,11 +109,11 @@ export const Register = () => {
           <div className="btn btn-light d-flex gap-2 justify-content-center border mt-3 shadow-sm">
             <img
               className="img_3"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png"
+              src="https://freesvg.org/img/1534129544.png"
             ></img>
             <div className="fw-semibold text-secondary">
               {" "}
-              Registrate con tu cuenta de Facebook !
+              Registrate tu cuenta Google !
             </div>
           </div>
         </div>
