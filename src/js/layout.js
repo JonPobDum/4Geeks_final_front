@@ -8,6 +8,7 @@ import { Register} from "./views/register";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
+import { Pomodoro } from "./views/pomodoro";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
