@@ -1,0 +1,19 @@
+.container {
+    background-color: black;
+}
+.play_move{
+    height: 0px;
+    width: 0px;
+    margin: auto;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-radius: 10px 30px 30px 10px;
+    border-bottom: 100px solid #000; 
+    background-color: white;
+}
+.circulo{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: white;
+}
