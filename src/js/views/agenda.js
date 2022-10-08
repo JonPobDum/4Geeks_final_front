@@ -4,9 +4,16 @@ import "../../styles/agenda.css";
 
 export const Agenda = () => {
   const getTask = () => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/asd")
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola",
+    {
+      method : "GET",
+      headers : {
+        "Content-type":"application/json"
+      },
+    })
       .then((data) => data.json())
-      .then((response) => setLista(response));
+      .then((response) => {setLista(response), console.log(response)})
+      .catch(error => console.log(error))
   };
 
   useEffect(() => {
@@ -26,7 +33,7 @@ export const Agenda = () => {
     e.preventDefault();
     setLista([...lista, { label: `${e.target[0].value}`, done: false }]);
     // console.log(lista)
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/asd", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([
@@ -37,13 +44,16 @@ export const Agenda = () => {
       .then((res) => res.json())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
+      // CODIGO PARA DEJAR EL INPUT VACIO
+      e.target[0].value = " " 
+      
   };
 
   const DeleteItems = (indexItem) => {
     setLista((prevState) =>
       prevState.filter((elemento, indice) => indice !== indexItem)
     );
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/asd", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([
@@ -60,7 +70,7 @@ export const Agenda = () => {
       <form type="submit" onSubmit={agregarDato}>
         <h1 className="Titulo h1_agenda">Agenda</h1>
         {/* <p> Tareas:</p> */}
-        <input className="input_agenda" type="text"></input>
+        <input className="input_agenda" maxLength={50} type="text"></input>
       </form>
       <ul>
         {lista.map((elemento, indice) => {
