@@ -8,12 +8,13 @@ import { Register} from "./views/register";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Slideshow } from "./views/carousel";
+import { Applayer } from "./views/playermode";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Carousel } from "./component/carousel";
-
+import { Player } from "./component/player";
 
 //create your first component
 export const Layout = () => {
@@ -26,7 +27,9 @@ export const Layout = () => {
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
 					<Navbar />
-					<Carousel />
+					{/* <Carousel /> */}
+					{/* <Applayer /> */}
+					<Footer />
 					<Switch>
 						<Route exact path="/">
 							<Home />
@@ -34,6 +37,10 @@ export const Layout = () => {
 
 						<Route exact path="/carousel">
 							<Slideshow />
+						</Route>
+
+						<Route exact path="/playermode">
+							<Applayer />
 						</Route>
 
 						<Route exact path="/login">
@@ -48,6 +55,7 @@ export const Layout = () => {
 						<Route exact path="/single/:theid">
 							<Single />
 						</Route>
+
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
