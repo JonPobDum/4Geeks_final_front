@@ -4,7 +4,7 @@ import "../../styles/home.css";
 // import imageresponsive from "../../img/";
 
 export const Home = () => (
-	<div className="container-fluid p-0">
+	<div className="container-fluid p-0 container-sm">
 		<img src="https://static.timesofisrael.com/www/uploads/2022/04/iStock-1325376146.jpg" className="img-fluid" alt="..." />
 		<div className="container bg-secondary text-light rounded mt-5">
 			<div className="row justify-content-evenly">
