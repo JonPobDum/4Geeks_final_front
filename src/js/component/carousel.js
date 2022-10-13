@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Carousel  = () =>{
     return(
-        <div className="container-fluid w-25">
+        <div>
             <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

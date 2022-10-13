@@ -5,7 +5,12 @@ import { Curtain } from "../component/curtain";
 export const Slideshow = () => {
     
     return <div>
-       <Carousel/>
-        <Curtain/>
+       <div className="row d-block d-md-none">
+            <Carousel/>
+       </div>
+       <div className="row d-none d-md-block">
+            <Curtain/>
+       </div>
+        
     </div>
 }
