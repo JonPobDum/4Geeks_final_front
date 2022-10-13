@@ -1,44 +1,49 @@
-import React, {useState, useEffect} from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
+import React, { useState } from 'react';
+import { useInterval } from 'react-interval-hook';
 import "../../styles/pomodoro.css";
 
 export function Pomodoro () {
-	const [minuto, setMinuto] = useState(25)
-	const [segundo, setSegundo] = useState(0)
-	const [displayMsg, setDisplayMsg] = useState(false);
-
-	useEffect (() => {
-		let interval = setInterval(()=> {
-			clearInterval(interval);
-
-			if (segundo === 0) {
-				if (minuto !== 0){
-					setSegundo(59);
-					setMinuto(minuto - 1);
-				} else{
-					let minuto = displayMsg ? 24 : 4;
-					let segundo = 59;
-
-					setSegundo (segundo);
-					setMinuto (minuto);
-					setDisplayMsg(!displayMsg)
-				}
-			} else {
-				setSegundo (segundo - 1);
+	const { start, stop, isActive } = useInterval(
+			() => {
+				console.log('Callback every 1000 ms');
+			},
+			1000,
+			{
+				autoStart: false,
+				immediate: false,
+				selfCorrecting: false,
+				onFinish: () => {
+					console.log('Callback when timer is stopped');
+				},
 			}
-		}, 1000)
-	}, [segundo])
+		);
+		const [active, setActive] = useState(isActive());
+		const [triggerFinishCallback, setTriggerFinishCallback] = useState(true);
+	
+		return (
+			<div>
+				<button type="button" onClick={start} id="start">
+					Start
+				</button>
+				<button type="button" onClick={() => stop(triggerFinishCallback)} id="stop">
+					Stop
+				</button>
+				<button type="button" onClick={() => setActive(isActive())} id="checkActive">
+					Check active
+				</button>
+				<div id="active">Active: {active ? 1 : 0}</div>
+				<div>
+					<label htmlFor="trigger-finish-callback">
+						<input
+							id="trigger-finish-callback"
+							type="checkbox"
+							defaultChecked={triggerFinishCallback}
+							onChange={() => setTriggerFinishCallback(current => !current)}
+						/>
+						Trigger finish callback
+					</label>
+				</div>
+			</div>
+		);
+	};
 
-	const timerMinuto = minuto < 10 ? `0${minuto}` : minuto;
-	const timerSegundo = segundo < 10 ? `0${segundo}` : segundo;
-
-	return <div className="pomodoro m-2">
-		<div className="message">
-			{displayMsg && <div>Break! Vuelve a trabajar en:</div>}
-		</div>
-		<br></br>
-		<div className="timer m-2">
-			{timerMinuto}:{timerSegundo}</div>
-	</div>;
-
-}
