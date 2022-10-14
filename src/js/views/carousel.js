@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "../component/carousel";
 import { Curtain } from "../component/curtain";
-
+import "../../styles/curtain.css";
 export const Slideshow = () => {
     
     return <div>
@@ -11,6 +11,7 @@ export const Slideshow = () => {
        <div className="row d-none d-md-block">
             <Curtain/>
        </div>
+      
         
     </div>
 }

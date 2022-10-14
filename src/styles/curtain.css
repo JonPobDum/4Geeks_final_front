@@ -1,13 +1,16 @@
 .gallery {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 10%;
     --n: 1; /* number of rows*/
     --m: 5; /* number of columns */
     --g: 0px;  /* control the gap */
-    --f: .8;   /* control the scale factor */
+    --f: .2;   /* control the scale factor */
     
     display: grid;
     gap: var(--g);
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 60vh;
     grid-template-columns: repeat(var(--m),auto);
   }
   
@@ -18,7 +21,7 @@
     min-width: 100%;
     object-fit: cover;
     cursor: pointer;
-    filter: grayscale(80%);
+    filter: grayscale(75%);
     transition: .35s linear;
   }
   
@@ -31,5 +34,15 @@
   
   body {
     margin: 0;
-    background: #60c4ff;
+    background: black;
   }
+
+  .bg1 {
+    width: 50%; 
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+}

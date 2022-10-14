@@ -5,6 +5,9 @@ import "../../styles/curtain.css";
 export const Curtain  = () =>{
     return (
         <div>
+            <h1>
+                Choose your activity
+            </h1>
            <div class="gallery">
                 <img src="https://imagizer.imageshack.com/img922/4594/7EUVYp.png" alt="To Do List"/>
                 <img src="https://imagizer.imageshack.com/img924/6793/vZZG30.png" alt="Focus Session"/>
