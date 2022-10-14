@@ -39,7 +39,28 @@ export const Login = () =>{
                                           </div>
                                     </div>
                                     {/* Le agregue efecto outline para que cuando uno se parara sobre el boton de Login cambiara de color */}
-                                    <div className="btn btn-outline-secondary w-100 mt-4">Login</div>
+                                    <div className="btn btn-outline-secondary w-100 mt-4"onClick={()=>{
+                                          var myHeaders = new Headers();
+                                          myHeaders.append("Content-Type", "application/json");
+                                          
+                                          var raw = JSON.stringify({
+                                            "email": "eldya@gmail.com",
+                                            "password": "123456"
+                                          //   ------------- COMO DEJAR QUE CAPTURE LOS OTROS USUARIOS QUE SE REGISTREN---------
+                                          });
+                                          
+                                          var requestOptions = {
+                                            method: 'POST',
+                                            headers: myHeaders,
+                                            body: raw,
+                                            redirect: 'follow'
+                                          };
+                                          
+                                          fetch("https://3000-jonpobdum-4geeksfinalba-6wvcch43a8a.ws-us71.gitpod.io/api/login", requestOptions)
+                                            .then(response => response.json())
+                                            .then(result => localStorage.setItem("Token",result.token))
+                                            .catch(error => console.log('error', error));
+                                    }}>Login</div>
                                     <div className="d-flex gap-1 justify-content-center mt-1">
                                           <div>Dont have a account?</div>
                                           <a href="" className="text-decoration-none fw-semibold"> Register</a>
