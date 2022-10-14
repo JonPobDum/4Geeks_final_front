@@ -47,12 +47,19 @@ export function Applayer() {
     <body>
     
     <div className="App">
+    <div className="row align-items-stretch">
+    <div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
+                                    <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://i.ytimg.com/vi/a3H5hr8OLu8/maxresdefault.jpg"></img>
+                  </div>
+                  <div className="col">
       <Player 
         currentSongIndex={currentSongIndex} 
         setCurrentSongIndex={setCurrentSongIndex} 
         nextSongIndex={nextSongIndex} 
         songs={songs}
       />
+    </div>
+    </div>
     </div>
     </body>
   );

@@ -23,3 +23,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
     opacity: 40%;
     background-image: url("https://imagizer.imageshack.com/img923/3066/tS3rlo.png");
 }
+
+.bg2 {
+    -webkit-box-shadow: 0px 20px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 20px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 5px 0px rgba(0,0,0,0.75);
+}

@@ -54,7 +54,7 @@ export const Audiobars = () =>{
             <div className="row"></div>
         </div>
         <div className="colum1">
-            <div className="row"></div>
+            <div class="row"></div>
         </div>
     </div>
     );
