@@ -1,27 +1,43 @@
+
 body {
     background: #171af9;
     background: -webkit-linear-gradient(0deg, #171af9 0%, #5d1586 100%);
     background: linear-gradient(0deg, #171af9 0%, #5d1586 100%);
-    height: 100vh;
-    font-family: "Helvetica", monospace
-}
-
-#root {
-    height: 100%;
+    font-family: "roboto", sans-serif;
+    color: black;
+    
 }
 
 .pomodoro {
-    font-size: 3em;
+    font-size: 4.5em;
     display: flex; 
-    height: 100%;
+    height: 50%;
     justify-content: center;
     align-items: center;
-
+    background: #ff4747;
+    background: -webkit-linear-gradient(0deg, #ff4747 0%, #ab65ab 100%);
+    background: linear-gradient(0deg, #ff4747 0%, #ab65ab 100%);
+    border-radius: 50%;
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+ 
 }
 
 .message {
     font-size: 0.75em;
-    min-height: 1.5em;
-    margin-bottom: 0.5em;
+    height: 5em;
+    width: 5em;
     font-family: 'Helvetica', monospace;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    text-align: center;
+    text-decoration: solid;
 }
