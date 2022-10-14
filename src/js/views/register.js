@@ -29,10 +29,24 @@ export const Register = () => {
                                     <input
                                       className="input_1 form-control"
                                       type="text"
-                                      placeholder="Nombre"
+                                      placeholder="name"
                                     ></input>
                                   </div>
                                   
+                                  {/* <div className="input-group mt-3">
+                                    <div className="input-group-text">
+                                      <img
+                                        className="img_registro_input"
+                                        src="https://img1.freepng.es/20180217/pfq/kisspng-female-gender-symbol-clip-art-unisex-restroom-cliparts-5a8867d1a0a0a2.3019665915188889136579.jpg"
+                                      ></img>
+                                    </div>
+                                    Lista desplegable para seleccionar sexo
+                                    <select className="form-select" id="autoSizingSelect"> 
+                                      <option selected>Seleccione un sexo</option>
+                                      <option value="1">Hombre</option>
+                                      <option value="2">Mujer</option>
+                                    </select>
+                                  </div> */}
                                   <div className="input-group mt-3">
                                     <div className="input-group-text">
                                       <img
@@ -40,12 +54,11 @@ export const Register = () => {
                                         src="https://img1.freepng.es/20180217/pfq/kisspng-female-gender-symbol-clip-art-unisex-restroom-cliparts-5a8867d1a0a0a2.3019665915188889136579.jpg"
                                       ></img>
                                     </div>
-                                    {/* Lista desplegable para seleccionar sexo */}
-                                    <select className="form-select" id="autoSizingSelect"> 
-                                      <option selected>Seleccione un sexo</option>
-                                      <option value="1">Hombre</option>
-                                      <option value="2">Mujer</option>
-                                    </select>
+                                    <input
+                                      className="input_1 form-control"
+                                      type="text"
+                                      placeholder="gender"
+                                    ></input>
                                   </div>
 
                                   <div className="input-group mt-3">
@@ -58,7 +71,7 @@ export const Register = () => {
                                     <input
                                       className="input_1 form-control"
                                       type="text"
-                                      placeholder="Fecha de nacimiento DD/MM/AAAA"
+                                      placeholder="age"
                                     ></input>
                                   </div>
 
@@ -72,7 +85,7 @@ export const Register = () => {
                                     <input
                                       className="input_1 form-control"
                                       type="text"
-                                      placeholder="Correo electrónico"
+                                      placeholder="email"
                                     ></input>
                                   </div>
 
@@ -86,11 +99,11 @@ export const Register = () => {
                                     <input
                                       className="input_1 form-control"
                                       type="password"
-                                      placeholder="Ingrese su contraseña"
+                                      placeholder="password"
                                     ></input>
                                   </div>
 
-                                  <div className="input-group mt-3">
+                                  {/* <div className="input-group mt-3">
                                     <div className="input-group-text">
                                       <img
                                         className="img_registro_input"
@@ -102,10 +115,10 @@ export const Register = () => {
                                       type="password"
                                       placeholder="Ingrese nuevamente la contraseña"
                                     ></input>
-                                  </div>
+                                  </div> */}
 
                                   {/* Aca esta el botón con el cual el usaurio envia los datos para creación de cuenta, se debe realizar un POST */}
-                                  <div className="btn btn-secondary w-100 mt-4">Registrar!</div>
+                                  <div className="btn btn-secondary w-100 mt-4">Register</div>
                                   <div className="py-3">
                                     <div className="border-bottom text-center"></div>
                                   </div>
