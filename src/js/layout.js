@@ -29,7 +29,6 @@ export const Layout = () => {
 					<Navbar />
 					{/* <Carousel /> */}
 					{/* <Applayer /> */}
-					<Footer />
 					<Switch>
 						<Route exact path="/">
 							<Home />

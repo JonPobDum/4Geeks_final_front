@@ -1,31 +1,32 @@
 import React, {useState, useEffect} from 'react';
 import { Player } from '../component/player';
-
+import { Audiobars } from '../component/audiobars';
+import "../../styles/player.css"
 export function Applayer() {
   const [songs] = useState([
     {
-      title: "Forget me too ft. Halsey",
-      artist: "Machine Gun Kelly",
+      title: "SoundHelix Song",
+      artist: "T. Schürge",
       img_src: "./images/song-1.jpg",
-      src: "https://assets.breatheco.de/apis/sound/files/mario/songs/castle.mp3"
+      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"
     },
     {
-      title: "Song 2",
-      artist: "Artist 2",
+      title: "SoundHelix Song 12",
+      artist: "T. Schürge",
       img_src: "./images/song-2.jpg",
-      src: "https://assets.breatheco.de/apis/sound/files/mario/songs/castle.mp3"
+      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     },
     {
-      title: "Song 3",
-      artist: "Artist 3",
+      title: "SoundHelix Song 15",
+      artist: "T. Schürge",
       img_src: "./images/song-3.jpg",
-      src: "https://assets.breatheco.de/apis/sound/files/mario/songs/castle.mp33"
+      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3"
     },
     {
-      title: "Song 4",
-      artist: "Artist 4",
+      title: "SoundHelix Song 16",
+      artist: "T. Schürge",
       img_src: "./images/song-4.jpg",
-      src: "https://assets.breatheco.de/apis/sound/files/mario/songs/castle.mp3"
+      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3"
     }
   ]);
 
@@ -43,6 +44,8 @@ export function Applayer() {
   }, [currentSongIndex]);
 
   return (
+    <body>
+    
     <div className="App">
       <Player 
         currentSongIndex={currentSongIndex} 
@@ -51,5 +54,6 @@ export function Applayer() {
         songs={songs}
       />
     </div>
+    </body>
   );
 }
