@@ -9,12 +9,14 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Slideshow } from "./views/carousel";
 import { Applayer } from "./views/playermode";
+import { Audiowaves } from "./views/waves"
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Carousel } from "./component/carousel";
 import { Player } from "./component/player";
+import { Waveanimation } from "./component/wavesanimation";
 
 //create your first component
 export const Layout = () => {
@@ -43,6 +45,11 @@ export const Layout = () => {
 							<Applayer />
 						</Route>
 
+						<Route exact path="/waves">
+							<Audiowaves />
+						</Route>
+
+						Audiowaves
 						<Route exact path="/login">
 							<Login />
 						</Route>
