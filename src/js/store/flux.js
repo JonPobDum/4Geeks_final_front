@@ -19,10 +19,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
 			},
-			loadSomeData: () => {
+			login: (correo, contraseña) => {
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+				//localStorage.setItem("token", result.token <- viene de la api)
+				console.log(correo, contraseña)
+
+
 			},
 			changeColor: (index, color) => {
 				//get the store

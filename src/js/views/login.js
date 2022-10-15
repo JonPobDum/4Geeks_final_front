@@ -1,17 +1,21 @@
-import React from "react";
+import React,{useContext} from "react";
 import "../../styles/login.css";
+import { Context } from "../store/appContext";
 
 export const Login = () =>{
-
+  const {actions} = useContext(Context);
   return  <div class="container w-75 mt-5">
   
   <div className="row align-items-stretch">
                
                   <div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
-                                    <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://imagizer.imageshack.com/img923/7849/7PHYWW.png"></img>
+                        <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://imagizer.imageshack.com/img923/7849/7PHYWW.png"></img>
                   </div>
                   <div className="col">
-                        <form className="form_1 bg p-5 text-secondary bg1 r2">
+                        <form className="form_1 bg p-5 text-secondary bg1 r2" onSubmit={(e)=>{
+                              e.preventDefault();
+                              actions.login(e.target[0].value, e.target[1].value)
+                        }}>
                               <div>
                                     <div className="d-flex justify-content-center">
                                           <img className="img_1" src="https://www.freeiconspng.com/thumbs/login-icon/user-login-icon-29.png"></img>
@@ -21,7 +25,7 @@ export const Login = () =>{
                                                 <div className="input-group-text">
                                                       <img className="img_2" src="https://img2.freepng.es/20180331/wyw/kisspng-email-address-computer-icons-mail-5ac01146cd9c82.7697999315225367748422.jpg"></img>
                                                 </div>
-                                                <input className="input_1 form-control" type="text" placeholder="Username"></input>
+                                                <input className="input_1 form-control" type="text" placeholder="email"></input>
                                     </div>
                                     <div className="input-group mt-4">
                                           <div className="input-group-text">
@@ -39,28 +43,7 @@ export const Login = () =>{
                                           </div>
                                     </div>
                                     {/* Le agregue efecto outline para que cuando uno se parara sobre el boton de Login cambiara de color */}
-                                    <div className="btn btn-outline-secondary w-100 mt-4"onClick={()=>{
-                                          var myHeaders = new Headers();
-                                          myHeaders.append("Content-Type", "application/json");
-                                          
-                                          var raw = JSON.stringify({
-                                            "email": "eldya@gmail.com",
-                                            "password": "123456"
-                                          //   ------------- COMO DEJAR QUE CAPTURE LOS OTROS USUARIOS QUE SE REGISTREN---------
-                                          });
-                                          
-                                          var requestOptions = {
-                                            method: 'POST',
-                                            headers: myHeaders,
-                                            body: raw,
-                                            redirect: 'follow'
-                                          };
-                                          
-                                          fetch("https://3000-jonpobdum-4geeksfinalba-6wvcch43a8a.ws-us71.gitpod.io/api/login", requestOptions)
-                                            .then(response => response.json())
-                                            .then(result => localStorage.setItem("Token",result.token))
-                                            .catch(error => console.log('error', error));
-                                    }}>Login</div>
+                                    <button className="btn btn-outline-secondary w-100 mt-4" type="submmit" >Login</button>
                                     <div className="d-flex gap-1 justify-content-center mt-1">
                                           <div>Dont have a account?</div>
                                           <a href="" className="text-decoration-none fw-semibold"> Register</a>
