@@ -10,10 +10,10 @@ import { Todo_list } from "../component/home_component/todolist_home";
 export const Home = () => (
 	<>
 		<Carousel_home />
+		<Pomodoro />
+		<Todo_list />
 		<Testimonios />
 		<Testimonios2 />
 		<Testimonios />
-		<Pomodoro />
-		<Todo_list />
 	</>
 );

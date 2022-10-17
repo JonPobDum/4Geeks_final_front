@@ -10,6 +10,16 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 );
 }
 
+/* carousel home*/
+.carousel-title {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    color: white;
+}
+
+/*Fin Caruosel Home*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -37,3 +47,5 @@ body {
     transform: scale(1.1);
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
   }
+
+  
