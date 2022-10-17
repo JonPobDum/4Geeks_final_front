@@ -4,7 +4,8 @@ export const Pomodoro = () => {
     return (
         <div className="container mt-5">
             <div className="container-fluid row">
-                <img className="col-4" src="https://img1.freepng.es/20180704/vo/kisspng-egg-timer-pomodoro-technique-kitchen-clip-art-pomodoro-5b3c90f7874439.2619220915306959275541.jpg" />
+                <h1 className="display-5 text-white text-center mb-5">Pomodoro</h1>
+                <img className="col-4 d-none d-sm-block " src="https://img1.freepng.es/20180704/vo/kisspng-egg-timer-pomodoro-technique-kitchen-clip-art-pomodoro-5b3c90f7874439.2619220915306959275541.jpg" />
                 <div className="container-fluid col-6">
                     <p>
                       <a className="btn btn-dark d-block" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
