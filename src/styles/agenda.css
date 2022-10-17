@@ -1,18 +1,93 @@
+:root {
+    --gradient-color0: rgba(48,3,35,1);
+    --gradient-color41: rgba(48,3,35,1);
+    --gradient-color100: rgba(145,32,107,1);
+    --agenda-form: #151825;
+    --title: white;
+    --todo-row-color0: rgba(20, 159, 255, 1) 0%;
+    --todo-row-color100: rgba(17, 122, 255, 1) 0%;
+    --icons-size: 24px;
+    --delete-icon-color: white;
+    --input-color: white;
+    --todo-button0: ;
+    --todo-button100: ;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sanas Unicode', 'Lucikda Grande', Arial, sans-serif;
+}
+
+
+body{
+background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-color41) 41%, var(--gradient-color100) 100%);
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+
+.todo-input::placeholder {
+    color: var(--input-color);
+
+}
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+        var(--todo-button0) 0%,
+        var(--todo-button100) 100%
+    );
+    color: ;
+}
+
+.todo-row:nthchild(4n + 3) {
+background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color100)));
+
+}
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: var(--icons-size);
+    cursor: pointer;
+}
+.delete-icon {
+    margin-right: 5px;
+    color: var(--delete-icon-color);
+
+}
+
 .agenda_form{
     margin: auto;
     margin-top: 10px;
     width: 50%;
     border: 3px solid gray;
     padding: 10px;
-    background: rgb(230, 226, 226);
+    background: var(--agenda-form);
     
 }
 
 .h1_agenda {
+    
     margin-left: 30%;
     font-family: cursive;
-    font-size: 80px;
-    color: rgb(215, 184, 190);
+    font-size: 30px;
+    color: var(--title);
 }
 
 .input_agenda{

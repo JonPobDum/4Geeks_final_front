@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { Link, useParams, useHistory } from "react-router-dom";
 import "../../styles/agenda.css";
+import { Todo_list } from "../component/agenda";
 import { Context } from "../store/appContext";
 
 export const Agenda = () => {
@@ -29,7 +30,7 @@ export const Agenda = () => {
 
     // ACA ESTA LA CONDICION EN DONDE REVISO TOKEN PARA INGRESAR A AGENDA
     // if (localStorage.getItem("Token")) {
-    //   alert("debes iniciar sesión para ingresasr", actions.usuario());
+    //   alert("⚠️ you have to login 🔑 tu begin a sesion 🔓", actions.usuario());
     // } else {
     //   history.push("/agenda");
     // }
@@ -80,7 +81,7 @@ export const Agenda = () => {
   return (
     <div className="container agenda_form">
       <form type="submit" onSubmit={agregarDato}>
-        <h1 className="Titulo h1_agenda">Agenda</h1>
+        <h1 className="Titulo h1_agenda">What's the Plan for Today?</h1>
         {/* <p> Tareas:</p> */}
         <input className="input_agenda" maxLength={50} type="text" placeholder="ingrese sus actividades"></input>
       </form>
