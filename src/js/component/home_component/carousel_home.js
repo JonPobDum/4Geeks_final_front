@@ -5,7 +5,7 @@ import "../../../styles/home.css";
 export const Carousel_home = () => {
     return (
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
-		    <div className="carousel-inner">
+		    <div className="carousel-inner rounded-3">
 			    <div className="carousel-item active">
 				    <img src="https://static.timesofisrael.com/www/uploads/2022/04/iStock-1325376146.jpg" className="d-block w-100" alt="..." />
 					<div className="carousel-title">

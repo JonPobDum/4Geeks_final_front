@@ -8,12 +8,12 @@ import { Todo_list } from "../component/home_component/todolist_home";
 // import imageresponsive from "../../img/";
 
 export const Home = () => (
-	<>
+	<div className="container">
 		<Carousel_home />
 		<Pomodoro />
 		<Todo_list />
 		<Testimonios />
 		<Testimonios2 />
 		<Testimonios />
-	</>
+	</div>
 );

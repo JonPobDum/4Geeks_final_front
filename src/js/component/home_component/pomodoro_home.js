@@ -2,10 +2,9 @@ import React from "react";
 
 export const Pomodoro = () => {
     return (
-        <div className="container mt-5">
-            <div className="container-fluid row">
+            <div className="container-fluid mt-5 row">
                 <h1 className="display-5 text-white text-center mb-5">Pomodoro</h1>
-                <img className="col-4 d-none d-sm-block " src="https://img1.freepng.es/20180704/vo/kisspng-egg-timer-pomodoro-technique-kitchen-clip-art-pomodoro-5b3c90f7874439.2619220915306959275541.jpg" />
+                <img className="col-4 d-none d-sm-block " src="https://media.giphy.com/media/Vh2w7qkzfg7DVcfQmD/giphy.gif" />
                 <div className="container-fluid col-6">
                     <p>
                       <a className="btn btn-dark d-block" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -57,8 +56,8 @@ export const Pomodoro = () => {
                         Si aun estas con energías, renueva el pomodoro y comienza un nuevo ciclo                 
                     </div>
                     </div>
+                    <button type="button" className="btn btn-primary btn-lg">Comienza ahora!</button>
                 </div>
             </div>
-        </div>
     )
 };
