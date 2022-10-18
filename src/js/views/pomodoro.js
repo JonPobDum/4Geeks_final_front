@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../../styles/pomodoro.css";
+import { Applayer } from "../views/playermode"
 
 export function Pomodoro () {
 	const [minutes, setMinutes] = useState(25);
@@ -34,12 +35,18 @@ export function Pomodoro () {
 
 
 	return <div className='pomodoro m-3 sm-3 md-6 lg-9 xl-12'>
-		<div className='timer m-3 sm-3 md-6 lg-9 xl-12'> {timerMinutes}:{timerSeconds} </div>
-		<div className='message m-3'>
-			{displayMessage && <div className='message m-3'><h5>Bien hecho! tómate un descanso.</h5></div>}
-		</div> 
-		<div><br/></div>
-		
-	</div>
+				<div className='timer m-3 sm-3 md-6 lg-9 xl-12'> {timerMinutes}:{timerSeconds} </div>
+				
+				<div className='message m-3'>
+					{displayMessage && <div className='message m-3'><h5>Bien hecho! tómate un descanso.</h5></div>}
+				</div> 
+				
+				<div><br/>
+				</div>
+			
+				<div>
+				<Applayer />
+				</div>
+			</div>
 
 }
