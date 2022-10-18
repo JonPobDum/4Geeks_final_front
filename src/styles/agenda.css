@@ -11,6 +11,7 @@
     --input-color: white;
     --todo-button0: ;
     --todo-button100: ;
+    --todo-color: #161a2b;
 }
 
 *{
@@ -31,17 +32,53 @@ background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-
     justify-content: start;
     width: 520px;
     min-height: 600px;
-
+    background: var(--todo-color);
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
     padding-bottom: 32px;
-}
+  }
+
+  h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: var(--input-color);
+  }
+
 
 .todo-input::placeholder {
     color: var(--input-color);
 
 }
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
 
 .todo-button {
     padding: 16px;
@@ -83,7 +120,6 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
 }
 
 .h1_agenda {
-    
     margin-left: 30%;
     font-family: cursive;
     font-size: 30px;
