@@ -1,0 +1,22 @@
+/* frame del slider de trabajo */
+.slider{
+    height: 40px;
+    border: 2px solid var(--red);
+    border-radius: 20px;
+}
+/* boton del deslizador de trabajo*/
+.thumb{
+    background-color: var(--red);
+    cursor:pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 20px;
+}
+/* frame del slider de descanzo */
+.slider.green{
+    border: 2px solid var(--green);
+}
+/* boton del deslizador de descanzo */
+.slider.green .thumb{
+    background-color: var(--green);
+}
