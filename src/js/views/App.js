@@ -3,6 +3,8 @@ import Button from "../component/Buttons";
 import CountdownAnimation from "../component/CountdownAnimation";
 import SetPomodoro from "../component/SetPomodoro";
 import { SettingsContext } from "../component/context/SettingsContext";
+import '../../styles/App.css';
+import '../../styles/index.css';
 
 const App = () => {
   const {

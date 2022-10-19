@@ -1,5 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { SettingsContext } from '../component/context/SettingsContext'
+import '../../styles/App.css';
+import '../../styles/index.css';
 
 const SetPomodoro = () => {
 
