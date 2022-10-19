@@ -9,6 +9,8 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { Pomodoro } from "./views/pomodoro";
+import App from "./views/App";
+import SettingsContextProvider from "./component/context/SettingsContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -31,6 +33,13 @@ const Layout = () => {
 						<Route exact path="/login">
 							<Login />
 						</Route>
+						
+						<Route exact path="/timer">
+							<SettingsContextProvider>
+								<App />
+							</SettingsContextProvider>
+						</Route>
+
 						<Route exact path="/register">
 							<Register />
 						</Route>
