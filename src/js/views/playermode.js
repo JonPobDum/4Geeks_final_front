@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Player } from '../component/player';
 import { Audiobars } from '../component/audiobars';
 import "../../styles/player.css"
+
 export function Applayer() {
   const [songs] = useState([
     {

@@ -8,6 +8,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { Slideshow } from "./views/carousel";
 import { Applayer } from "./views/playermode";
+import { MusicPlayer } from "./views/MusicPlayer";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -40,8 +41,12 @@ export const Layout = () => {
 						<Route exact path="/playermode">
 							<Applayer />
 						</Route>
+						
+						<Route exact path="/music">
+							<MusicPlayer />
+						</Route>
 
-					
+						
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
