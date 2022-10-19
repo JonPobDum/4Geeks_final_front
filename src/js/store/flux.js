@@ -24,11 +24,11 @@ const getState = ({ getStore, getActions, setStore }) => {
         myHeaders.append("Content-Type", "application/json");
 
         var raw = JSON.stringify({
-          name: "jon",
-          gender: "hombre",
-          age: 20,
-          email: "jon20@gmail.com",
-          password: "1234",
+          name: name,
+          gender: gender,
+          age: age,
+          email: email,
+          password: password,
         });
 
         var requestOptions = {
@@ -45,7 +45,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((response) => response.json())
 		  
 		//   PROBLEMA PARA ALMACENAR, DONDE LO HAGO ??
-          .then((result) => localStorage.getItem()) 
+          .then((result) => localStorage.setItem('result',result))
 
           .catch((error) => console.log("error", error));
 
