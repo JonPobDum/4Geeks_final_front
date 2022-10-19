@@ -90,7 +90,7 @@ background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-
         var(--todo-button0) 0%,
         var(--todo-button100) 100%
     );
-    color: ;
+    
 }
 
 .todo-row:nthchild(4n + 3) {
@@ -120,7 +120,7 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
 }
 
 .h1_agenda {
-    margin-left: 30%;
+    margin-left: 23%;
     font-family: cursive;
     font-size: 30px;
     color: var(--title);
@@ -131,6 +131,7 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
 }
 
 .li_agenda {
-    list-style-type: none; 
+    list-style-type: none;
+    color: white; 
     
  }

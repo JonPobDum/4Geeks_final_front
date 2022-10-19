@@ -65,15 +65,19 @@ export const Agenda = () => {
   };
 
   const DeleteItems = (indexItem) => {
-    setLista((prevState) =>
-      prevState.filter((elemento, indice) => indice !== indexItem)
-    );
+    let aux = lista.map((e, index) => {
+      if (index == indexItem) {
+        e.done = true;
+      }
+      return e;
+    });
+    setLista(aux);
+    
     fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([
-        ...lista,
-        { label: `${e.target[0].value}`, done: false },
+        ...lista
       ]),
     });
   };
@@ -83,10 +87,11 @@ export const Agenda = () => {
       <form type="submit" onSubmit={agregarDato}>
         <h1 className="Titulo h1_agenda">What's the Plan for Today?</h1>
         {/* <p> Tareas:</p> */}
-        <input className="input_agenda" maxLength={50} type="text" placeholder="ingrese sus actividades"></input>
+        <input className="input_agenda" maxLength={80} type="text" placeholder="ingrese sus actividades"></input>
       </form>
       <ul>
         {lista.map((elemento, indice) => {
+          if (elemento.done==false)
           return (
             <li className="li_agenda" key={indice}>
               {elemento.label}{" "}
