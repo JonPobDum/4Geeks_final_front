@@ -1,6 +1,8 @@
+
+// --------------------- SETTINGS VIEW ---------------------
 import ReactSlider from 'react-slider';
 import '../../../styles/slider.css'
-import SettingsContext from "./SettingsContext";
+import SettingsContext from "../circle_pomodoro_timer/SettingContext.js";
 import {useContext} from "react";
 import BackButton from "./BackButton";
 
@@ -45,11 +47,15 @@ function Settings() {
         value={settingsInfo.breakMinutes}
         onChange={newValue => settingsInfo.setBreakMinutes(newValue)}
         // minimo valor de descanzo
-        min={1}
+        min={3}
         // clase para el boton de descanzo
-        max={120}
+        max={25}
       />
+
+      {/* Styles inline del boton de BackCutton */}
       <div style={{textAlign:'center', marginTop:'20px'}}>
+        
+        {/* Cuando se haga click en BackButton se quita el UseState de la funcionalidad y valor del Set Timer */}
         <BackButton onClick={() => settingsInfo.setShowSettings(false)} />
       </div>
 

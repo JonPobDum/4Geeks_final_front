@@ -9,6 +9,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 import { Pomodoro } from "./views/pomodoro";
+import App from "../js/component/circle_pomodoro_timer/App.js"
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
@@ -34,6 +35,11 @@ const Layout = () => {
 						<Route exact path="/register">
 							<Register />
 						</Route>
+
+						<Route exact path="/pomodoro2">
+							<App />
+						</Route>
+
 						<Route exact path="/demo">
 							<Demo />
 						</Route>

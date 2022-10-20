@@ -1,8 +1,8 @@
-import './App.css';
+import '../../../styles/App.css';
 import Timer from "../circle_pomodoro_timer/Timer";
 import Settings from "../circle_pomodoro_timer/Settings";
 import {useState} from "react";
-import SettingsContext from "./SettingsContext";
+import SettingsContext from "./SettingContext";
 import { faParachuteBox } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
