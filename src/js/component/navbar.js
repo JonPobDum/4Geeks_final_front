@@ -24,6 +24,7 @@ export const Navbar = () => {
 				</div>	
 			<form className="container-fluid justify-content-center col-3" id="navbarNav">
    					<button className="btn btn-outline-danger me-2" type="button">Login</button>
+					<button className="btn btn-outline-secondary me-2" type="button">Register</button>
   			</form>
 		</nav>
 	);
