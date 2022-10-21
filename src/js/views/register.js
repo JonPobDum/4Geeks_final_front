@@ -20,7 +20,7 @@ export const Register = () => {
             onSubmit={(e) => {
               e.preventDefault();
 
-              actions.login(
+              actions.register(
                 e.target[0].value,
                 e.target[1].value,
                 e.target[2].value,
