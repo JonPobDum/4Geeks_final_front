@@ -10,6 +10,7 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import {Recuperar_Clave} from "./component/recuperar_password"
 
 //create your first component
 const Layout = () => {
@@ -28,6 +29,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/login">
 							<Login />
+						</Route>
+						<Route exact path="/recuperarclave">
+							<Recuperar_Clave />
 						</Route>
 						<Route exact path="/demo">
 							<Demo />

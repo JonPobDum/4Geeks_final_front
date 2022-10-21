@@ -20,6 +20,8 @@ const getState = ({ getStore, getActions, setStore }) => {
         getActions().changeColor(0, "green");
       },
 
+
+      // CON ESTA FUNCION REALIZO EL LOGEO DE LA CUENTA
       login: (correo, contraseña) => {
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -49,6 +51,35 @@ const getState = ({ getStore, getActions, setStore }) => {
         //localStorage.setItem("token", result.token <- viene de la api)
         console.log(correo, contraseña);
       },
+
+
+
+      // CON ESTA FUNCION SE PODRA RECUPERAR LA CLAVE Y SE DEBE ENVIAR AL CORREO ELECTRONICO
+      recuperar_password: (email) => {
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({
+          email: email
+        });
+
+        var requestOptions = {
+          method: "POST",
+          headers: myHeaders,
+          body: raw,
+          redirect: "follow",
+        };
+
+        fetch(
+          "https://3000-jonpobdum-4geeksfinalba-aqx5xd98ze5.ws-us72.gitpod.io/recuperar/clave",
+          requestOptions
+        )
+          .then((response) => response.text())
+          .then((result) => console.log(result))
+          .catch((error) => console.log("error", error));
+      },
+
+
 
 
       changeColor: (index, color) => {
