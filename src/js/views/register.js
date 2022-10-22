@@ -50,7 +50,7 @@ export const Register = () => {
                 <input
                   className="input_1 form-control"
                   type="text"
-                  placeholder="name"
+                  placeholder="name" required
                 ></input>
               </div>
 
@@ -78,7 +78,7 @@ export const Register = () => {
                 <input
                   className="input_1 form-control"
                   type="text"
-                  placeholder="gender"
+                  placeholder="gender" required
                 ></input>
               </div>
 
@@ -92,7 +92,7 @@ export const Register = () => {
                 <input
                   className="input_1 form-control"
                   type="text"
-                  placeholder="age"
+                  placeholder="age" required
                 ></input>
               </div>
 
@@ -106,7 +106,7 @@ export const Register = () => {
                 <input
                   className="input_1 form-control"
                   type="text"
-                  placeholder="email"
+                  placeholder="email" required
                 ></input>
               </div>
 
@@ -120,7 +120,7 @@ export const Register = () => {
                 <input
                   className="input_1 form-control"
                   type="password"
-                  placeholder="password"
+                  placeholder="password" required
                 ></input>
               </div>
 
