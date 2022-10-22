@@ -1,8 +1,9 @@
 import ReactSlider from 'react-slider';
 import '../../../styles/slider.css'
-import SettingsContext from "../circle_pomodoro_timer/SettingContext";
-import {useContext} from "react";
-import BackButton from "./BackButton";
+import SettingsContext from "./SettingsContext";
+import BackButton from "../circle_pomodoro_timer/BackButton.js";
+import React, {useContext} from 'react';
+
 
 // ATENCION: hay que instalar los componentes de controles deslizables con: yarn add react-slider
 function Settings() {

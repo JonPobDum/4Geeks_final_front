@@ -3,7 +3,7 @@ import Timer from "./Timer";
 import Settings from "../circle_pomodoro_timer/Settings";
 import {useState} from "react";
 import React from 'react';
-import SettingsContext from "../circle_pomodoro_timer/SettingContext";
+import SettingsContext from "./SettingsContext";
 import { faParachuteBox } from '@fortawesome/free-solid-svg-icons';
 
 export function App() {

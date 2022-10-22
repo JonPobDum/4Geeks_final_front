@@ -6,7 +6,7 @@ import PlayButton from "./PlayButton";
 import PauseButton from "../circle_pomodoro_timer/PauseButton";
 import SettingsButton from "./SettingsButton";
 import {useContext, useState, useEffect, useRef} from "react";
-import SettingsContext from "../circle_pomodoro_timer/SettingContext";
+import SettingsContext from "./SettingsContext";
 import React from 'react';
 
 const red = '#f54e4e';

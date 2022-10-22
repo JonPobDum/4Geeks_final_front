@@ -1,3 +1,5 @@
+import React from "react";
+
 function PauseButton(props) {
     return (
       <button {...props}>
