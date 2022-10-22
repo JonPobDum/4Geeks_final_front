@@ -25,13 +25,13 @@ export const Login = () =>{
                                                 <div className="input-group-text">
                                                       <img className="img_2" src="https://img2.freepng.es/20180331/wyw/kisspng-email-address-computer-icons-mail-5ac01146cd9c82.7697999315225367748422.jpg"></img>
                                                 </div>
-                                                <input className="input_1 form-control" type="text" placeholder="email"></input>
+                                                <input className="input_1 form-control" type="text" placeholder="email" required></input>
                                     </div>
                                     <div className="input-group mt-4">
                                           <div className="input-group-text">
                                                 <img className="img_2" src="https://w7.pngwing.com/pngs/205/276/png-transparent-computer-icons-password-encapsulated-postscript-others-silhouette-keyhole-user-thumbnail.png"></img>
                                           </div>
-                                          <input className="input_1 form-control" type="password" placeholder="Password"></input>
+                                          <input className="input_1 form-control" type="password" placeholder="Password" required></input>
                                     </div>
                                     <div className="d-flex justify-content-around mt-1">
                                           <div className="d-flex align-items-center gap-1">
