@@ -1,3 +1,5 @@
+import React from "react";
+
 function SettingsButton(props) {
     return (
         // Clase para un boton de Settings

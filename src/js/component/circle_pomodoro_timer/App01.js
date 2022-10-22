@@ -1,11 +1,12 @@
-import './App.css';
-import Timer from "../circle_pomodoro_timer/Timer";
+import '../../../styles/App01.css';
+import Timer from "./Timer";
 import Settings from "../circle_pomodoro_timer/Settings";
 import {useState} from "react";
-import SettingsContext from "./SettingsContext";
+import React from 'react';
+import SettingsContext from "../circle_pomodoro_timer/SettingContext";
 import { faParachuteBox } from '@fortawesome/free-solid-svg-icons';
 
-function App() {
+export function App() {
     
     // Declarar los UseState para mostrar o Minutos de Trabajo/Descanzo ó el Timer
     // Este es el Usestate inicial el Setting
@@ -15,8 +16,8 @@ function App() {
   // Este es el UseState para poder deslizar el boton de Rest time en los sliders empezando con un default de 15 minutos
   const [breakMinutes, setBreakMinutes] = useState(15);
 
-  return (
-    <main>
+  return ( 
+    <div>
       <SettingsContext.Provider value={{
         // El UseState para llamar a la funcion de Settings
         showSettings,
@@ -34,8 +35,8 @@ function App() {
         {/* Ternario de si muestra Settings o de lo contrario muestra el Timer */}
         {showSettings ? <Settings /> : <Timer />}
       </SettingsContext.Provider>
-    </main>
+    </div>
   );
 }
 
-export default App;
+

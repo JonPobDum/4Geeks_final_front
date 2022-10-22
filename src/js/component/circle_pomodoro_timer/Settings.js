@@ -1,6 +1,6 @@
 import ReactSlider from 'react-slider';
 import '../../../styles/slider.css'
-import SettingsContext from "./SettingsContext";
+import SettingsContext from "../circle_pomodoro_timer/SettingContext";
 import {useContext} from "react";
 import BackButton from "./BackButton";
 
