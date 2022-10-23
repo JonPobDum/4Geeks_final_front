@@ -1,5 +1,6 @@
 import React,{useContext} from "react";
 import "../../styles/login.css";
+import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 export const Login = () =>{
@@ -39,14 +40,18 @@ export const Login = () =>{
                                           <div className="div_remember pt-1">Remember me</div>
                                           </div>
                                           <div className="pt-1">
+                                                <Link to="/forgot_password">
                                                 <a href="" className="div_remember text-decoration-none fst-italic">forgot your password?</a>
+                                                </Link>
                                           </div>
                                     </div>
                                     {/* Le agregue efecto outline para que cuando uno se parara sobre el boton de Login cambiara de color */}
                                     <button className="btn btn-outline-secondary w-100 mt-4" type="submmit" >Login</button>
                                     <div className="d-flex gap-1 justify-content-center mt-1">
                                           <div>Dont have a account?</div>
+                                          <Link to="/register">
                                           <a href="" className="text-decoration-none fw-semibold"> Register</a>
+                                          </Link>
                                     </div>
                                     <div className="py-3">
                                           <div className="border-bottom text-center">
