@@ -1,31 +1,27 @@
 import React, {useState, useEffect} from 'react';
-import { Player } from '../component/player';
-import { Audiobars } from '../component/audiobars';
+import { Player } from '../component/Audioplayer/player';
+import { Audiobars } from '../component/Audioplayer/audiobars';
 import "../../styles/player.css"
 export function Applayer() {
   const [songs] = useState([
     {
       title: "SoundHelix Song",
       artist: "T. Schürge",
-      img_src: "./images/song-1.jpg",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"
     },
     {
       title: "SoundHelix Song 12",
       artist: "T. Schürge",
-      img_src: "./images/song-2.jpg",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     },
     {
       title: "SoundHelix Song 15",
       artist: "T. Schürge",
-      img_src: "./images/song-3.jpg",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3"
     },
     {
       title: "SoundHelix Song 16",
       artist: "T. Schürge",
-      img_src: "./images/song-4.jpg",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3"
     }
   ]);

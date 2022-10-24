@@ -2,7 +2,7 @@ import React, {useState, useRef, useEffect} from 'react'
 import { Controls } from './controls';
 import { Details } from './details';
 import { Audiobars } from './audiobars';
-import "../../styles/player.css"
+import "../../../styles/audiobars.css"
 
 export function Player(props) {
     const audioEl = useRef(null);
@@ -44,13 +44,14 @@ export function Player(props) {
 
     return (
         // className="c-player": es la caja del reproductor
+       
         <div className="c-player">
             <audio src={props.songs[props.currentSongIndex].src} ref={audioEl}></audio>
-            {/* <h4>Playing now</h4> */}
+          
             <Details song={props.songs[props.currentSongIndex]} />
             <Controls isPlaying={isPlaying} setIsPlaying={setIsPlaying} SkipSong={SkipSong} />
             <Audiobars />
-            {/* <p>Next up: <span>{props.songs[props.nextSongIndex].title} by {props.songs[props.nextSongIndex].artist}</span></p> */}
-        </div>
+            <p className='mt-4'>Next up: <span>{props.songs[props.nextSongIndex].title} by {props.songs[props.nextSongIndex].artist}</span></p>
+    </div>
     )
 }

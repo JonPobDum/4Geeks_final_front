@@ -1,5 +1,5 @@
 body{
-    
+    position: relative;
     background: black;
     background: rgba(48,3,35,1);
 background: -moz-linear-gradient(left, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41%, rgba(145,32,107,1) 100%);
@@ -13,19 +13,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
 }
 
 .c-player {
-	box-shadow: 0 2px 4px -4px rgba(0, 0, 0, .4), 0 50px 45px -20px rgba(0, 0, 0, .2);
+	
 	border-radius: 30px;
-	height: 430px;
-	margin: auto;
-	overflow: hidden;
-	position: relative;
-	width: 400px;
-    opacity: 40%;
-    background-image: url("https://imagizer.imageshack.com/img923/3066/tS3rlo.png");
-}
-
-.bg2 {
-    -webkit-box-shadow: 0px 20px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 20px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 20px 5px 0px rgba(0,0,0,0.75);
+	height: 500px;
+	position: absolute;
+	width: 500px;
+    opacity: 75%;
+    background-image: url("https://imagizer.imageshack.com/img924/6237/KlkQGd.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
