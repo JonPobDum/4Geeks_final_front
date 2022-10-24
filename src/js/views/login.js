@@ -10,7 +10,7 @@ export const Login = () =>{
   <div className="row align-items-stretch">
                
                   <div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
-                        <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://imagizer.imageshack.com/img923/7849/7PHYWW.png"></img>
+                        <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://imagizer.imageshack.com/img922/2930/WomQBW.png" alt="Login image"></img>
                   </div>
                   <div className="col">
                         <form className="form_1 bg p-5 text-secondary bg1 r2" onSubmit={(e)=>{
