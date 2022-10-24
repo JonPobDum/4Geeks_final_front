@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import { Player } from '../component/Audioplayer/player';
-import { Audiobars } from '../component/Audioplayer/audiobars';
 import "../../styles/player.css"
 export function Applayer() {
   const [songs] = useState([
@@ -43,19 +42,19 @@ export function Applayer() {
     <body>
     
     <div className="App">
-    <div className="row align-items-stretch">
-    <div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
-                                    <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://i.ytimg.com/vi/a3H5hr8OLu8/maxresdefault.jpg"></img>
-                  </div>
-                  <div className="col">
-      <Player 
-        currentSongIndex={currentSongIndex} 
-        setCurrentSongIndex={setCurrentSongIndex} 
-        nextSongIndex={nextSongIndex} 
-        songs={songs}
-      />
-    </div>
-    </div>
+          <div className="row align-items-stretch main">
+                <div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 ">
+                      <img className="img-fluid position-relative" src="https://i.ytimg.com/vi/a3H5hr8OLu8/maxresdefault.jpg"></img>
+                </div>
+                <div className="col img-2">
+                        <Player className
+                          currentSongIndex={currentSongIndex} 
+                          setCurrentSongIndex={setCurrentSongIndex} 
+                          nextSongIndex={nextSongIndex} 
+                          songs={songs}
+                        />
+                </div>
+          </div>
     </div>
     </body>
   );
