@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import "../../styles/register.css";
-import "../../styles/login.css";
+
 
 export const Register = () => {
   const { actions } = useContext(Context);
@@ -33,11 +33,11 @@ export const Register = () => {
               <div className="d-flex justify-content-center">
                 <img
                   className="img_4"
-                  src="https://static.thenounproject.com/png/538753-200.png"
+                  src="https://imagizer.imageshack.com/img924/889/uFTr2J.png"
                 ></img>
               </div>
               <div className="text-center fs-4 fw-bold">
-                Formulario de registro
+                Fill up this form
               </div>
               {/* Aca estan los input en donde el usuario debe ingresar datos para realizar el registro */}
               <div className="input-group mt-4">
@@ -143,19 +143,19 @@ export const Register = () => {
                 className="btn btn-outline-secondary w-100 mt-4"
                 type="submmit"
               >
-                register
+               🖋️ Register
               </button>
               <div className="py-3">
                 <div className="border-bottom text-center"></div>
               </div>
-              <div className="btn btn-light d-flex gap-2 justify-content-center border mt-3 shadow-sm">
+              <div className="btn btn-outline-dark d-flex gap-2 justify-content-center border mt-3 shadow-sm">
                 <img
                   className="img_3"
                   src="https://freesvg.org/img/1534129544.png"
                 ></img>
                 <div className="fw-semibold text-secondary">
                   {" "}
-                  Registrate tu cuenta Google !
+                  Register up with your Google account
                 </div>
               </div>
             </div>
