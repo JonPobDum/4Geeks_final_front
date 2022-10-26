@@ -35,13 +35,13 @@ function Credencial(props) {
             </span>
           </div>{" "} */}
           <div className=" d-flex mt-2">
-            <button className="btn1 btn-dark"> Go to my activities </button>
+            <button className="actividad btn-dark"> Go to my activities </button>
           </div>
           <div className=" d-flex mt-2">
-            <button className="btn1 btn-dark"> Go to Carrousel</button>
+            <button className="actividad btn-dark"> Go to Carrousel</button>
           </div>
           <div className=" d-flex mt-2">
-            <button className="btn1 btn-dark" onClick={()=> actions.aa(history)}>log out </button>
+            <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>log out </button>
           </div>
           <div className="text mt-3">
             <hi>Welcome to brain manager!</hi>
@@ -63,7 +63,7 @@ function Credencial(props) {
           </div>{" "}
           <div className=" px-2 rounded mt-4 date ">
             {" "}
-            <span className="join">{now.toDateString()}</span>{" "}
+            <span className="fechayhora">{now.toDateString()}</span>{" "}
           </div>{" "}
         </div>{" "}
       </div>
