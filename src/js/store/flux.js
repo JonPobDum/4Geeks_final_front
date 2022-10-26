@@ -39,7 +39,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-d7pftvx8esn.ws-us72.gitpod.io/api/login",
+          "https://3000-jonpobdum-4geeksfinalba-b3pd4sfhqsr.ws-us72.gitpod.io/api/login",
           requestOptions
         )
           .then((response) => response.json())
@@ -77,6 +77,50 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((response) => response.text())
           .then((result) => console.log(result))
           .catch((error) => console.log("error", error));
+      },
+
+      register: (name, gender, age, email, password) => {
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify({
+          name: name,
+          gender: gender,
+          age: age,
+          email: email,
+          password: password,
+        });
+
+        var requestOptions = {
+          method: "POST",
+          headers: myHeaders,
+          body: raw,
+          redirect: "follow",
+        };
+
+        fetch(
+          "https://3000-jonpobdum-4geeksfinalba-b3pd4sfhqsr.ws-us72.gitpod.io/api/register",
+          requestOptions
+        )
+          .then((response) => response.json())
+		  
+		//   PROBLEMA PARA ALMACENAR, DONDE LO HAGO ??
+          .then((result) => localStorage.setItem('result',result))
+
+          .catch((error) => console.log("error", error));
+
+
+        console.log(name);
+
+        /**
+					fetch().then().then(data => setStore({ "foo": data.bar }))
+				*/
+      },
+
+      aa:(history) => {
+        // setStore{{usuario:{}}}
+        localStorage.removeItem("token")
+        history.push("/")
       },
 
 

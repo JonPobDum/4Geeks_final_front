@@ -1,10 +1,13 @@
 import React,{useContext} from "react";
+import { useHistory } from "react-router-dom";
 import "../../styles/login.css";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 export const Login = () =>{
   const {actions} = useContext(Context);
+  let history = useHistory();
+
   return  <div class="container w-75 mt-5">
   
   <div className="row align-items-stretch">
@@ -46,7 +49,7 @@ export const Login = () =>{
                                           </div>
                                     </div>
                                     {/* Le agregue efecto outline para que cuando uno se parara sobre el boton de Login cambiara de color */}
-                                    <button className="btn btn-outline-secondary w-100 mt-4" type="submmit" >Login</button>
+                                    <button className="btn btn-outline-secondary w-100 mt-4" type="submmit">Login</button>
                                     <div className="d-flex gap-1 justify-content-center mt-1">
                                           <div>Dont have a account?</div>
                                           <Link to="/register">

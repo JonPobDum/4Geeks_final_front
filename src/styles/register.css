@@ -1,0 +1,94 @@
+/*Effect Pallet*/
+
+:root {
+    --bg-gradient-0: rgba(48,3,35,1);
+    --bg-gradient-100: rgba(145,32,107,1);
+    --bg-default: black;
+    --bg-form: white;
+    --opacity: 1;
+    --color-shadow-1: rgba(0,0,0,0.75);
+    --color-shadow-2: rgba(0,0,0,0.75);
+    --color-border: #000000;
+    --r-radius: 25px;
+    --l-radius: 25px;
+}   
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    
+    background: rgba(48,3,35,1);
+background: -moz-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, var(--bg-gradient-0)), color-stop(41%, var(--bg-gradient-0)), color-stop(100%, var(--bg-gradient-100)));
+background: -webkit-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+background: -o-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+background: -ms-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+background: linear-gradient(to right, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 );
+
+}
+.row {
+  
+}
+
+.bg1 {
+    -webkit-box-shadow: 26px 20px 5px 0px var(--color-shadow-1);
+    -moz-box-shadow: 26px 20px 5px 0px var(--color-shadow-1);
+    box-shadow: 26px 20px 5px 0px var(--color-shadow-1); 
+    height: 95%;
+    
+}
+
+.bg2 {
+    -webkit-box-shadow: 0px 20px 5px 0px var(--color-shadow-2);
+    -moz-box-shadow: 0px 20px 5px 0px var(--color-shadow-2);
+    box-shadow: 0px 20px 5px 0px var(--color-shadow-2);
+    height: 95.18%;
+}
+
+.r1 {
+    border-radius: var(--l-radius) 0px 0px var(--l-radius);
+-moz-border-radius: var(--l-radius) 0px 0px var(--l-radius);
+-webkit-border-radius: var(--l-radius) 0px 0px var(--l-radius);
+border: 0px solid #000000;
+}
+.r2 {
+    border-radius: 0px var(--r-radius) var(--r-radius) 0px;
+-moz-border-radius: 0px var(--r-radius) var(--r-radius) 0px;
+-webkit-border-radius: 0px var(--r-radius) var(--r-radius) 0px;
+border: 0px solid #000000;
+}
+
+/* --------- Marcelo  --------------------------- */
+.img_1{
+    height: 100rem;
+}
+
+.img_2{
+    height: 1rem;
+}
+
+.img_3 {
+    height: 1.5rem;
+}
+
+.form_1 {
+    background-color: var(--bg-form);
+    width: auto;
+    opacity: var(--opacity)
+}
+
+.div_remember{
+    font-size: 0.9rem;
+}
+
+.img_4{
+    height: 5rem;
+}
+.img_registro_input{
+    height: 1.5rem;
+}
