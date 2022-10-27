@@ -12,7 +12,7 @@ export const Agenda = () => {
   // const { store, actions } = useContext(Context);
 
   const getTask = () => {
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/brainmanager", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
@@ -49,7 +49,7 @@ export const Agenda = () => {
     e.preventDefault();
     setLista([...lista, { label: `${e.target[0].value}`, done: false }]);
     // console.log(lista)
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/brainmanager", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([
@@ -73,7 +73,7 @@ export const Agenda = () => {
     });
     setLista(aux);
     
-    fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
+    fetch("https://assets.breatheco.de/apis/fake/todos/user/brainmanager", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify([
@@ -87,13 +87,12 @@ export const Agenda = () => {
       <form type="submit" onSubmit={agregarDato}>
         <h1 className="Titulo h1_agenda">What's the Plan for Today?</h1>
         {/* <p> Tareas:</p> */}
-        <input className="input_agenda" maxLength={80} type="text" placeholder="ingrese sus actividades"></input>
+        <input className="form-control" maxLength={80} type="text" placeholder="ingrese sus actividades"></input>
       </form>
-      <ul>
         {lista.map((elemento, indice) => {
           if (elemento.done==false)
           return (
-            <li className="li_agenda" key={indice}>
+            <li className="btn btn-light d-block my-2" key={indice}>
               {elemento.label}{" "}
               <button className="btn" onClick={() => DeleteItems(indice)}>
                 <i className="fas fa-trash-alt" />
@@ -101,7 +100,7 @@ export const Agenda = () => {
             </li>
           );
         })}
-      </ul>
+      
     </div>
   );
 };

@@ -126,12 +126,12 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
     color: var(--title);
 }
 
-.input_agenda{
+/* .input_agenda{
     width: 100%;
-}
+} */
 
-.li_agenda {
+/* .li_agenda {
     list-style-type: none;
     color: white; 
     
- }
+ } */
