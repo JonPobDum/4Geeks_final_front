@@ -30,7 +30,7 @@ export const Agenda = () => {
 
     // ACA ESTA LA CONDICION EN DONDE REVISO TOKEN PARA INGRESAR A AGENDA
     // if (localStorage.getItem("Token")) {
-    //   alert("⚠️ you have to login 🔑 tu begin a sesion 🔓", actions.usuario());
+    //   console.log("todolist");
     // } else {
     //   history.push("/agenda");
     // }
