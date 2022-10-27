@@ -4,7 +4,7 @@ import Settings from "../circle_pomodoro_timer/Settings";
 import {useState} from "react";
 import React from 'react';
 import SettingsContext from "./SettingsContext";
-import { faParachuteBox } from '@fortawesome/free-solid-svg-icons';
+
 
 export function App() {
     
@@ -12,12 +12,12 @@ export function App() {
     // Este es el Usestate inicial el Setting
   const [showSettings, setShowSettings] = useState(false);
     // Este es el UseState para poder deslizar el boton de Work time, en los sliders empezando con un default de 45 minutos
-  const [workMinutes, setWorkMinutes] = useState(45);
+  const [workMinutes, setWorkMinutes] = useState(25);
   // Este es el UseState para poder deslizar el boton de Rest time en los sliders empezando con un default de 15 minutos
-  const [breakMinutes, setBreakMinutes] = useState(15);
+  const [breakMinutes, setBreakMinutes] = useState(10);
 
   return ( 
-    <div>
+    <div className='main'>
       <SettingsContext.Provider value={{
         // El UseState para llamar a la funcion de Settings
         showSettings,

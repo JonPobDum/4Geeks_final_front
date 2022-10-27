@@ -28,9 +28,9 @@ function Settings() {
         // funcionalidad para poder deslizar el boton en los slider y que lo tome la funcion del contador
         onChange={newValue => settingsInfo.setWorkMinutes(newValue)}
         // minimo valor de trabajo
-        min={15}
+        min={25}
          // máximo valor de trabajo
-        max={90}
+        max={50}
       />
 
       {/* Titulo de controles de descanzo */}
@@ -46,9 +46,9 @@ function Settings() {
         value={settingsInfo.breakMinutes}
         onChange={newValue => settingsInfo.setBreakMinutes(newValue)}
         // minimo valor de descanzo
-        min={1}
+        min={5}
         // clase para el boton de descanzo
-        max={120}
+        max={20}
       />
       <div style={{textAlign:'center', marginTop:'20px'}}>
         <BackButton onClick={() => settingsInfo.setShowSettings(false)} />

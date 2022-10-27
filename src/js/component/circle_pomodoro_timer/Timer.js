@@ -22,6 +22,7 @@ function Timer() {
   const secondsLeftRef = useRef(secondsLeft);
   const isPausedRef = useRef(isPaused);
   const modeRef = useRef(mode);
+  const music = new Audio ("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3")
 
   function tick() {
     secondsLeftRef.current--;
@@ -86,9 +87,9 @@ function Timer() {
       <div style={{marginTop:'20px'}}>
         {isPaused
         // Componente de botón de Play con ternario
-        ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; }} />
+        ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; music.play(); }} />
         // Componente de botón de Pause
-          : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }} />}
+          : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; music.paused();}} />}
       </div>
 
 
