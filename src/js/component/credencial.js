@@ -5,7 +5,9 @@ import "../../styles/credencial.css";
 
 function Credencial(props) {
   const {actions} = useContext(Context);
+
   let history = useHistory();
+
   let now = new Date();
 
   return (
@@ -35,11 +37,11 @@ function Credencial(props) {
             </span>
           </div>{" "} */}
           <div className=" d-flex mt-2">
-            <button className="actividad btn-dark"> Go to my activities </button>
+            <button className="actividad btn-dark"> my activities </button>
           </div>
-          <div className=" d-flex mt-2">
+          {/* <div className=" d-flex mt-2">
             <button className="actividad btn-dark"> Go to Carrousel</button>
-          </div>
+          </div> */}
           <div className=" d-flex mt-2">
             <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>log out </button>
           </div>

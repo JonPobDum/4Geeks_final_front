@@ -1,0 +1,76 @@
+/*Effect Pallet*/
+
+:root {
+    --bg-gradient-0: rgba(48,3,35,1);
+    --bg-gradient-100: rgba(145,32,107,1);
+    --bg-default: black;
+    --bg-form: white;
+    --opacity: 1;
+    --color-shadow-1: rgba(0,0,0,0.75);
+    --color-shadow-2: rgba(0,0,0,0.75);
+    --color-border: #000000;
+    --r-radius: 25px;
+    --l-radius: 25px;
+  }   
+  
+  
+  *{
+    margin: 0%;
+    padding: 0%;
+  }
+  
+  body {
+    
+    background: rgba(48,3,35,1);
+  background: -moz-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, var(--bg-gradient-0)), color-stop(41%, var(--bg-gradient-0)), color-stop(100%, var(--bg-gradient-100)));
+  background: -webkit-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+  background: -o-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+  background: -ms-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+  background: linear-gradient(to right, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 );
+  
+  }
+  .gallery {
+      margin-top: 5%;
+      margin-left: 5%;
+      margin-right: 10%;
+      --n: 1; /* number of rows*/
+      --m: 5; /* number of columns */
+      --g: 0px;  /* control the gap */
+      --f: .2;   /* control the scale factor */
+      
+      display: grid;
+      gap: var(--g);
+      width: 90vw;
+      height: 60vh;
+      grid-template-columns: repeat(var(--m),auto);
+    }
+    
+    .gallery > img {
+      width: 0;
+      height: 0;
+      min-height: 100%;
+      min-width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+      filter: grayscale(75%);
+      transition: .35s linear;
+    }
+    
+    .gallery img:hover{
+      filter: grayscale(0);
+      width:  calc(100vh*var(--f)/var(--n));
+      height: calc(100vw*var(--f)/var(--m));
+    }
+  
+  
+    .bg1 {
+      width: 100%; 
+  }
+  
+  .h1_curtain {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }

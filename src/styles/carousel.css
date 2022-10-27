@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0
-}
+/*Effect Pallet*/
 :root {
     --bg-gradient-0: rgba(48,3,35,1);
     --bg-gradient-100: rgba(145,32,107,1);
@@ -14,6 +11,13 @@
     --r-radius: 25px;
     --l-radius: 25px;
 }   
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
 body {
     
     background: rgba(48,3,35,1);
@@ -27,82 +31,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
 
 }
 
-.card {
-    width: 500px;
-    background-color: #efefef;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.image img {
-    transition: all 0.5s
-}
-
-.card:hover .image img {
-    transform: scale(1.5)
-}
-
-.circlePerfil {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%
-}
-
-.name {
-    font-size: 22px;
-    font-weight: bold
-}
-
-.idd {
-    font-size: 14px;
-    font-weight: 600
-}
-
-.idd1 {
-    font-size: 12px
-}
-
-.number {
-    font-size: 22px;
-    font-weight: bold
-}
-
-/* .follow {
-    font-size: 12px;
-    font-weight: 500;
-    color: #444444
-} */
-
-.actividad {
-    height: 40px;
-    width: 150px;
-    border: none;
-    background-color: #000;
-    color: #ffffff;
-    font-size: 15px
-}
-
-/* .text span {
-    font-size: 13px;
-    color: #545454;
-    font-weight: 1000
-} */
-
-/* .icons i {
-    font-size: 19px
-} */
-
-/* hr .new1 {
-    border: 1px solid
-} */
-
-.fechayhora {
-    font-size: 14px;
-    color: #a0a0a0;
-    font-weight: bold
-}
-
-.date {
-    background-color: #ccc
+.h1_carousel {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }

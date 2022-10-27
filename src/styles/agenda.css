@@ -1,0 +1,137 @@
+:root {
+    --gradient-color0: rgba(48,3,35,1);
+    --gradient-color41: rgba(48,3,35,1);
+    --gradient-color100: rgba(145,32,107,1);
+    --agenda-form: #151825;
+    --title: white;
+    --todo-row-color0: rgba(20, 159, 255, 1) 0%;
+    --todo-row-color100: rgba(17, 122, 255, 1) 0%;
+    --icons-size: 24px;
+    --delete-icon-color: white;
+    --input-color: white;
+    --todo-button0: ;
+    --todo-button100: ;
+    --todo-color: #161a2b;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sanas Unicode', 'Lucikda Grande', Arial, sans-serif;
+}
+
+
+body{
+background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-color41) 41%, var(--gradient-color100) 100%);
+}
+
+.todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: var(--todo-color);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+
+  .h1_agenda {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+  }
+
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: var(--input-color);
+  }
+
+
+.todo-input::placeholder {
+    color: var(--input-color);
+
+}
+
+.todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #5d0cff;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #fff;
+  }
+
+.todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+        var(--todo-button0) 0%,
+        var(--todo-button100) 100%
+    );
+    
+}
+
+.todo-row:nthchild(4n + 3) {
+background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color100)));
+
+}
+.icons {
+    display: flex;
+    align-items: center;
+    font-size: var(--icons-size);
+    cursor: pointer;
+}
+.delete-icon {
+    margin-right: 5px;
+    color: var(--delete-icon-color);
+
+}
+
+.agenda_form{
+    margin: auto;
+    margin-top: 10px;
+    width: 50%;
+    border: 3px solid gray;
+    padding: 10px;
+    background: var(--agenda-form);
+    
+}
+
+.h1_agenda {
+    margin-left: 23%;
+    font-family: cursive;
+    font-size: 30px;
+    color: var(--title);
+}
+
+.input_agenda{
+    width: 100%;
+}
+
+.li_agenda {
+    list-style-type: none;
+    color: white; 
+    
+ }

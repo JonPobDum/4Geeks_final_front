@@ -7,6 +7,9 @@ import { Home } from "./views/home";
 import { Register } from "./views/register";
 import { Login } from "./views/login";
 import { Perfil } from "./views/perfil";
+import { Agenda } from "./views/agenda";
+import { Slideshow } from "./views/carousel";
+
 
 
 import { Demo } from "./views/demo";
@@ -35,6 +38,9 @@ const Layout = () => {
 						<Route exact path="/register">
 							<Register />
 						</Route>
+						<Route exact path="/carousel">
+							<Slideshow />
+						</Route>
 						<Route exact path="/login">
 							<Login />
 						</Route>
@@ -43,6 +49,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/forgot_password">
 							<Forgotpassword />
+						</Route>
+						<Route exact path="/todolist">
+							<Agenda />
 						</Route>
 						<Route exact path="/demo">
 							<Demo />

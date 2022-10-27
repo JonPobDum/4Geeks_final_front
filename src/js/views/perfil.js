@@ -7,16 +7,16 @@ export const Perfil = () =>{
 
     const  history = useHistory();
 
-    useEffect(()=>{
+    // useEffect(()=>{
         
-        if(localStorage.getItem("Token")){
-          alert("welcome")
-          }
-      else{
-          history.push("/")
-      }
+    //     if(localStorage.getItem("Token")){
+    //       alert("welcome")
+    //       }
+    //   else{
+    //       history.push("/")
+    //   }
         
-      },[])
+    //   },[])
 
 
     return <Credencial/>
