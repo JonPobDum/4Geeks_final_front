@@ -1,21 +1,18 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
-
 import { Register } from "./views/register";
 import { Login } from "./views/login";
 import { Perfil } from "./views/perfil";
 import { Agenda } from "./views/agenda";
 import { Slideshow } from "./views/carousel";
-
-
-
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
-import injectContext from "./store/appContext";
+import { App } from "../js/component/circle_pomodoro_timer/App01.js";
 
+import injectContext from "./store/appContext";
+import ScrollToTop from "./component/scrollToTop";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import {Forgotpassword} from "./component/fogot_password"
@@ -50,6 +47,11 @@ const Layout = () => {
 						<Route exact path="/forgot_password">
 							<Forgotpassword />
 						</Route>
+
+						<Route exact path="/pomodoro">
+							<App />
+						</Route>
+
 						<Route exact path="/todolist">
 							<Agenda />
 						</Route>
