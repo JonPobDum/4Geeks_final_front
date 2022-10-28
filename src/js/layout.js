@@ -10,6 +10,7 @@ import { Slideshow } from "./views/carousel";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { App } from "../js/component/circle_pomodoro_timer/App01.js";
+import { Applayer } from "./views/playermode.js";
 
 import injectContext from "./store/appContext";
 import ScrollToTop from "./component/scrollToTop";
@@ -55,6 +56,10 @@ const Layout = () => {
 						<Route exact path="/todolist">
 							<Agenda />
 						</Route>
+
+						<Route exact path="/playermode">
+							<Applayer />
+						</Route>	
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
