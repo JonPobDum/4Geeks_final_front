@@ -87,9 +87,9 @@ function Timer() {
       <div style={{marginTop:'20px'}}>
         {isPaused
         // Componente de botón de Play con ternario
-        ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; music.play(); }} />
+        ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; }} /> //music.play();
         // Componente de botón de Pause
-          : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; music.paused();}} />}
+          : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }} />} 
       </div>
 
 
