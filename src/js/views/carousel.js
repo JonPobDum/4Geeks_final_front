@@ -8,7 +8,7 @@ export const Slideshow = () => {
      const  history = useHistory();
 
      useEffect(()=>{
-         
+        //  PARA NO MOSTRAR LA VISTA AL MENOS QUE TENGAS TOKEN
     //      if(localStorage.getItem("token")){
     //          history.push("/carousel")
     //        }
