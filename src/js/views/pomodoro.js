@@ -1,13 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import "../../styles/pomodoro.css";
 import { Applayer } from "../views/playermode"
+import { Link, useParams, useHistory } from "react-router-dom";
+
 
 export function Pomodoro () {
 	const [minutes, setMinutes] = useState(25);
 	const [seconds, setSeconds] = useState(0);
 	const [displayMessage, setDisplayMessage] = useState(false);
 
+	const  history = useHistory();
+
+
 	useEffect(() => {
+
+	//  PARA NO MOSTRAR LA VISTA AL MENOS QUE TENGAS TOKEN	
+
+    //     if(localStorage.getItem("token")){
+    //         history.push("/pomodoro")
+    //       }
+    //   else{
+    //       history.push("/")
+    //   }
+
+
 		let interval = setInterval(() => {
 			clearInterval(interval);
 

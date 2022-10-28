@@ -3,6 +3,7 @@ import { Link, useParams, useHistory } from "react-router-dom";
 import { Carousel } from "../component/carousel";
 import { Curtain } from "../component/curtain";
 import "../../styles/curtain.css";
+
 export const Slideshow = () => {
 
      const  history = useHistory();

@@ -41,9 +41,10 @@ export const Navbar = () => {
 						</Link>
 						</li>
 						<li className="nav-item">
-						{/* <Link to="/register">
-							<a className="nav-link active">Register</a>
-						</Link> */}
+						<Link to="/pomodoro">
+							<a className="nav-link active">Timer</a>
+						</Link>
+						
 						</li>
 						<li className="nav-item">
 						<Link to="/carousel">
@@ -57,7 +58,7 @@ export const Navbar = () => {
 						</li>
 						<li className="nav-item">
 						<Link to="/perfil">
-							<a className="nav-link active">My profile</a>
+							<a className="nav-link active">profile</a>
 						</Link>
 						{/* <Link to="/">
 							<a className="nav-link active">Cuaderno de animo</a>
