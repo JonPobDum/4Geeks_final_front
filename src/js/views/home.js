@@ -8,7 +8,7 @@ export const Home = () => {
 	return  <div class="container w-75 mt-5">
 				<div className="row align-items-stretch">
 					<div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
-						<img src="https://imagizer.imageshack.com/img923/5812/J6VbIM.png" className="img-fluid" alt="..." />                    
+						<img src="https://imagizer.imageshack.com/img923/5812/J6VbIM.png" className="img-fluid portada" alt="..." />                    
 					</div>
 					<div class="col bg">
 						<div className="row">

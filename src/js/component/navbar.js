@@ -23,8 +23,8 @@ export const Navbar = () => {
 			<div className="container-fluid">
 				<Link to="/">
 					<div className="navbar-brand">
-      					<img src={logoimagen} width="30" height="24" className="d-inline-block align-text-top" />
-						<a className="ms-3">App</a>
+      					{/* <img src={logoimagen} width="30" height="24" className="d-inline-block align-text-top" /> */}
+						<a className="ms-3">Home</a>
     				</div>
 				</Link>
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,10 +58,10 @@ export const Navbar = () => {
 						</li>
 						<li className="nav-item">
 						<Link to="/perfil">
-							<a className="nav-link active">profile</a>
+							<a className="nav-link active">Profile</a>
 						</Link>
 						{/* <Link to="/">
-							<a className="nav-link active">Cuaderno de animo</a>
+							<a className="nav-link active">Player</a>
 						</Link> */}
 						</li>
 						<li className="nav-item">

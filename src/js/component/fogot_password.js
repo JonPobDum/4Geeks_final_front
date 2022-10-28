@@ -22,7 +22,7 @@ return(
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label" style={{color: "white"}}>Name</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required  name='name'></input>
-    <div id="emailHelp" class="form-text" style={{color: "white"}}>We'll never share your email with anyone else.</div>
+    <div id="emailHelp" class="form-text" style={{color: "white"}}></div>
   </div>
 
   <div className="mb-3">
@@ -32,7 +32,7 @@ return(
   </div>
   
   {/* <Link to="/login"> */}
-  <button id='button' type="submit" className="btn btn-primary">Send your password</button>
+  <button id='button' type="submit" className="btn btn-primary " style={{ width: "38rem" }}>Ask your password</button>
   {/* </Link> */}
 </form>
 

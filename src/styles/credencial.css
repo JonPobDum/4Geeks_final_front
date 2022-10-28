@@ -106,3 +106,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
 .date {
     background-color: #ccc
 }
+
+.titulo_nombre{
+    color:#000000;
+}
+.titulo_usuario{
+    color:#000000;
+}
+
+.titulo_welcome{
+    color:#000000;
+
+}

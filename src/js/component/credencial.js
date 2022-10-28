@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import { useHistory } from "react-router-dom";
 import { Context } from "../store/appContext";
+import { Link } from "react-router-dom";
 import "../../styles/credencial.css";
 
 function Credencial(props) {
@@ -24,12 +25,10 @@ function Credencial(props) {
             />
           </button>
           <span className="name mt-3"></span>
-          <span className="idd">@NOMBRE_USUARIO</span>{" "}
+          <span className="idd titulo_nombre">@NOMBRE_USUARIO</span>{" "}
           <div className="d-flex flex-row justify-content-center align-items-center gap-2">
-            <span className="idd1">correo_usuario</span>
-            <span>
-              <i className="fa fa-copy"></i>
-            </span>
+            <span className="idd1 titulo_usuario">correo_usuario</span>
+            
           </div>
           {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3">
             <span className="number">
@@ -37,7 +36,9 @@ function Credencial(props) {
             </span>
           </div>{" "} */}
           <div className=" d-flex mt-2">
+          <Link to="/carousel">
             <button className="actividad btn-dark"> my activities </button>
+            </Link>
           </div>
           {/* <div className=" d-flex mt-2">
             <button className="actividad btn-dark"> Go to Carrousel</button>
@@ -45,7 +46,7 @@ function Credencial(props) {
           <div className=" d-flex mt-2">
             <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>log out </button>
           </div>
-          <div className="text mt-3">
+          <div className="text mt-3 titulo_welcome">
             <p>Welcome to brain manager!</p>
           </div>
           <div className="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">
