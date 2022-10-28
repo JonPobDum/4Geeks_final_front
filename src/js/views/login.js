@@ -1,4 +1,4 @@
-import React,{useContext} from "react";
+import React,{useContext, useEffect} from "react";
 import { useHistory } from "react-router-dom";
 import "../../styles/login.css";
 import { Link } from "react-router-dom";
@@ -7,7 +7,7 @@ import { Context } from "../store/appContext";
 export const Login = () =>{
   const {actions} = useContext(Context);
   const history = useHistory();
-
+ 
   return  <div class="container w-75 mt-5">
   
   <div className="row align-items-stretch">

@@ -84,7 +84,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           .catch((error) => console.log("error", error));
       },
 
-      register: (name, gender, age, email, password) => {
+      register: (name, gender, age, email, password,history) => {
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
@@ -110,12 +110,9 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((response) => response.json())
 		  
 		//   PROBLEMA PARA ALMACENAR, DONDE LO HAGO ??
-          .then((result) => localStorage.setItem('result',result))
-
+          .then((result) =>localStorage.setItem('result',result))
           .catch((error) => console.log("error", error));
-
-
-        console.log(name);
+          console.log(name);
 
         /**
 					fetch().then().then(data => setStore({ "foo": data.bar }))

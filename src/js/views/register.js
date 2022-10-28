@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
+import { useHistory } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/register.css";
 
 
 export const Register = () => {
   const { actions } = useContext(Context);
+  const history = useHistory();
   return (
     <div class="container w-75 mt-5">
       <div className="row align-items-stretch">
@@ -25,7 +27,8 @@ export const Register = () => {
                 e.target[1].value,
                 e.target[2].value,
                 e.target[3].value,
-                e.target[4].value
+                e.target[4].value,
+                
               );
             }}
           >
