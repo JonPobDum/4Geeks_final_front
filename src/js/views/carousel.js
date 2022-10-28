@@ -9,12 +9,12 @@ export const Slideshow = () => {
 
      useEffect(()=>{
          
-         if(localStorage.getItem("token")){
-             history.push("/carousel")
-           }
-       else{
-           history.push("/")
-       }
+    //      if(localStorage.getItem("token")){
+    //          history.push("/carousel")
+    //        }
+    //    else{
+    //        history.push("/")
+    //    }
          
        },[])
 

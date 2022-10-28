@@ -8,13 +8,13 @@ export const Perfil = () =>{
     const  history = useHistory();
 
     useEffect(()=>{
-        
-        if(localStorage.getItem("token")){
-            history.push("/perfil")
-          }
-      else{
-          history.push("/")
-      }
+        // NO PUEDES VER LA VISTA AL MENOS QUE TENGAS TOKEN
+    //     if(localStorage.getItem("token")){
+    //         history.push("/perfil")
+    //       }
+    //   else{
+    //       history.push("/")
+    //   }
         
       },[])
 

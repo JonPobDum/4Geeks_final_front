@@ -29,11 +29,11 @@ export const Agenda = () => {
     getTask();
 
     // ACA ESTA LA CONDICION EN DONDE REVISO TOKEN PARA INGRESAR A AGENDA
-    if (localStorage.getItem("token")) {
-        history.push("/todolist");
-    } else {
-      history.push("/");
-    }
+    // if (localStorage.getItem("token")) {
+    //     history.push("/todolist");
+    // } else {
+    //   history.push("/");
+    // }
   }, []);
 
   /*TODO LIST */
