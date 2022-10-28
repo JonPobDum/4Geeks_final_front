@@ -46,7 +46,7 @@ function Credencial(props) {
             <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>log out </button>
           </div>
           <div className="text mt-3">
-            <hi>Welcome to brain manager!</hi>
+            <p>Welcome to brain manager!</p>
           </div>
           <div className="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">
             {" "}

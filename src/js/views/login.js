@@ -6,7 +6,7 @@ import { Context } from "../store/appContext";
 
 export const Login = () =>{
   const {actions} = useContext(Context);
-  let history = useHistory();
+  const history = useHistory();
 
   return  <div class="container w-75 mt-5">
   
@@ -18,7 +18,7 @@ export const Login = () =>{
                   <div className="col">
                         <form className="form_1 bg p-5 text-secondary bg1 r2" onSubmit={(e)=>{
                               e.preventDefault();
-                              actions.login(e.target[0].value, e.target[1].value)
+                              actions.login(e.target[0].value, e.target[1].value,history)
                         }}>
                               <div>
                                     <div className="d-flex justify-content-center">

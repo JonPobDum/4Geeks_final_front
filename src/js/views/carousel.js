@@ -7,17 +7,16 @@ export const Slideshow = () => {
 
      const  history = useHistory();
 
-     // useEffect(()=>{
+     useEffect(()=>{
          
-     //     if(localStorage.getItem("Token")){
-     //       console.log("welcome")
-     //       }
-     //   else{
-     //       history.push("/carousel")
-     //   }
+         if(localStorage.getItem("token")){
+             history.push("/carousel")
+           }
+       else{
+           history.push("/")
+       }
          
-     //   },[])
- 
+       },[])
 
     
     return <div>

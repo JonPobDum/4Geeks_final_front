@@ -8,8 +8,8 @@ export const Agenda = () => {
 
 // CONSTANTES PARA APLICAR METODO PARA INICIAR AGENDA CON TOKEN.
 // ESTAS FUNCIONES SE PODRAN REALIZAR CUANDO SE UNAN LAS VISTAS Y CONTENTA EL FLUX DE LOGIN QUE CHEQUEA TOKEN
-  // const history = useHistory();
-  // const { store, actions } = useContext(Context);
+  const history = useHistory();
+  const { store, actions } = useContext(Context);
 
   const getTask = () => {
     fetch("https://assets.breatheco.de/apis/fake/todos/user/nicola", {
@@ -29,11 +29,11 @@ export const Agenda = () => {
     getTask();
 
     // ACA ESTA LA CONDICION EN DONDE REVISO TOKEN PARA INGRESAR A AGENDA
-    // if (localStorage.getItem("Token")) {
-    //   console.log("todolist");
-    // } else {
-    //   history.push("/agenda");
-    // }
+    if (localStorage.getItem("token")) {
+        history.push("/todolist");
+    } else {
+      history.push("/");
+    }
   }, []);
 
   /*TODO LIST */
