@@ -9,12 +9,13 @@ export const Perfil = () =>{
 
     useEffect(()=>{
         // NO PUEDES VER LA VISTA AL MENOS QUE TENGAS TOKEN
-    //     if(localStorage.getItem("token")){
-    //         history.push("/perfil")
-    //       }
-    //   else{
-    //       history.push("/")
-    //   }
+      //   if(localStorage.getItem("token")){
+      //     alert("Bienvenido!")
+      //       history.push("/perfil")
+      //     }
+      // else{
+      //     history.push("/")
+      // }
         
       },[])
 

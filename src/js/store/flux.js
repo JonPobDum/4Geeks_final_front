@@ -1,6 +1,12 @@
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
+     name: "",
+     gender: "",
+     age:"",
+     email:"",
+     password:"",
+
       demo: [
         {
           title: "FIRST",
@@ -39,7 +45,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-qr9es25s9b4.ws-us73.gitpod.io/api/login",
+          "https://3000-jonpobdum-4geeksfinalba-ir65w2p09al.ws-us73.gitpod.io/api/login",
           requestOptions
         )
           .then((response) => response.json())
@@ -104,13 +110,30 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-qr9es25s9b4.ws-us73.gitpod.io/api/register",
+          "https://3000-jonpobdum-4geeksfinalba-ir65w2p09al.ws-us73.gitpod.io/api/register",
           requestOptions
         )
           .then((response) => response.json())
 		  
 		//   PROBLEMA PARA ALMACENAR, DONDE LO HAGO ??
-          .then((result) =>localStorage.setItem('result',result))
+          .then((result) =>{
+            if (result.register) {
+              setStore({ register: result });
+            } else {
+              setStore({
+              name: null,
+              gender: null,
+              age: null,
+              email: null,
+              password: null,
+              
+              } );
+              sessionStorage.setItem("currentUser", JSON.stringify(raw));
+              sessionStorage.setItem("isAuthenticated", true);
+              alert("Usuario Registrado! ahora puedes logear con tu cuenta");
+              window.location.href = "/login";
+            }
+          })
           .catch((error) => console.log("error", error));
           console.log(name);
 
@@ -124,7 +147,14 @@ const getState = ({ getStore, getActions, setStore }) => {
         localStorage.removeItem("token")
         alert("se ha cerrado la sesión")
         history.push("/")
+       
         
+
+
+
+
+
+
       },
 
 
