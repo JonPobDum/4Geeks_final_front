@@ -4,6 +4,18 @@ import "../../styles/login.css";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
+
+// function validarCorreo(correo){
+//       var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+//       var esValido = expReg.test(correo);
+//       if(esValido==true){
+//             alert("correo valido");
+//       }
+//       else{
+//             alert("correo no es valido")
+//       }
+// }
+
 export const Login = () =>{
   const {actions} = useContext(Context);
   const history = useHistory();
@@ -29,7 +41,7 @@ export const Login = () =>{
                                                 <div className="input-group-text">
                                                       <img className="img_2" src="https://img2.freepng.es/20180331/wyw/kisspng-email-address-computer-icons-mail-5ac01146cd9c82.7697999315225367748422.jpg"></img>
                                                 </div>
-                                                <input className="input_1 form-control" type="text" placeholder="email" required></input>
+                                                <input className="input_1 form-control" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="email" required></input>
                                     </div>
                                     <div className="input-group mt-4">
                                           <div className="input-group-text">

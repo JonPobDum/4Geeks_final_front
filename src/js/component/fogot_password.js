@@ -18,7 +18,7 @@ return(
 
 <form   id="form" style={{ width: "38rem" }} onSubmit={sendEmail}>
   
-
+  
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label" style={{color: "white"}}>Name</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required  name='name'></input>
@@ -27,7 +27,7 @@ return(
 
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label" style={{color: "white"}}>Email address</label>
-    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name='email'></input>
+    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required name='email'></input>
     <div id="emailHelp" className="form-text" style={{color: "white"}}>We'll never share your email with anyone else.</div>
   </div>
   

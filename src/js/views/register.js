@@ -108,7 +108,7 @@ export const Register = () => {
                 </div>
                 <input
                   className="input_1 form-control"
-                  type="text"
+                  type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                   placeholder="email" required
                 ></input>
               </div>
@@ -150,7 +150,7 @@ export const Register = () => {
               </button>
               <div className="py-3">
                 <div className="border-bottom text-center"></div>
-              </div>
+              {/* </div>
               <div className="btn btn-outline-dark d-flex gap-2 justify-content-center border mt-3 shadow-sm">
                 <img
                   className="img_3"
@@ -159,7 +159,7 @@ export const Register = () => {
                 <div className="fw-semibold text-secondary">
                   {" "}
                   Register up with your Google account
-                </div>
+                </div> */}
               </div>
             </div>
           </form>
