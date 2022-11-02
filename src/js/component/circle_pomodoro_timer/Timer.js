@@ -8,6 +8,7 @@ import SettingsButton from "./SettingsButton";
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from "./SettingsContext";
 import React from 'react';
+import '../../../styles/App01.css';
 
 const red = '#f54e4e';
 const green = '#4aec8c';
@@ -69,7 +70,7 @@ function Timer() {
   if(seconds < 10) seconds = '0'+seconds;
 
   return (
-    <div>
+    <div className='timerdiv col-xl-3 col-md-9 col-sm-12 align-items-center p-5'>
     {/* Componente de barra circular */}
       <CircularProgressbar
         value={percentage}
@@ -95,7 +96,7 @@ function Timer() {
 
       {/* Componente de botón de Settings */}
       {/* Posicionamiento del Boton de Settings */}
-      <div style={{marginTop:'20px'}}>
+      <div className='Setbar p-3' style={{marginTop:'20px'}}>
         <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
       </div>
     </div>
