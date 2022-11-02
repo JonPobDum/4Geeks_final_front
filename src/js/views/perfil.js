@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 export const Perfil = () =>{
 
     const  history = useHistory();
+    const {actions, store} = useContext(Context);
 
     useEffect(()=>{
         // NO PUEDES VER LA VISTA AL MENOS QUE TENGAS TOKEN
@@ -21,5 +22,12 @@ export const Perfil = () =>{
 
 
     return <Credencial/>
+    
+    // <div>
+      
+    //   {store.usuarios.map((o,index)=>{
+    //     return <Credencial name={o.name} email={o.email}/>
+    //   })}   
+    //   </div>
     
 }

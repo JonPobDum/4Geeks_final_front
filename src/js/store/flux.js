@@ -1,7 +1,11 @@
 const getState = ({ getStore, getActions, setStore }) => {
   return {
     store: {
-     name: "",
+      usuarios:[],
+
+      register:[],
+
+     name: " ",
      gender: "",
      age:"",
      email:"",
@@ -45,7 +49,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-ir65w2p09al.ws-us73.gitpod.io/api/login",
+          "https://3000-jonpobdum-4geeksfinalba-hnoloyqcjw0.ws-us73.gitpod.io/api/login",
           requestOptions
         )
           .then((response) => response.json())
@@ -90,6 +94,9 @@ const getState = ({ getStore, getActions, setStore }) => {
           .catch((error) => console.log("error", error));
       },
 
+
+
+
       register: (name, gender, age, email, password,history) => {
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -110,12 +117,12 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-ir65w2p09al.ws-us73.gitpod.io/api/register",
+          "https://3000-jonpobdum-4geeksfinalba-hnoloyqcjw0.ws-us73.gitpod.io/api/register",
           requestOptions
         )
           .then((response) => response.json())
 		  
-		//   PROBLEMA PARA ALMACENAR, DONDE LO HAGO ??
+		//   PROBLEMA PARA ALMACENAR, DONDE LO HAGO? UTILICE FORMATO ENCONTRADO EN YOU.CL PARA DIRIGIR A OTRA VISTA.
           .then((result) =>{
             if (result.register) {
               setStore({ register: result });
@@ -147,17 +154,25 @@ const getState = ({ getStore, getActions, setStore }) => {
         localStorage.removeItem("token")
         alert("se ha cerrado la sesión")
         history.push("/")
-       
-        
-
-
-
-
-
-
+      
       },
 
 
+      // ACA CONSIGO TODOS LOS DATOS DE USUARIOS, NOMBRE , EDAD, GENERO, EMAIL QUE SE ALMACENAN EN STORE 
+      // ESTA FUNCION SE ACTIVA EN LA CARPETA APPCONTEXT EN USE EFFECT 
+      usuarios: () =>{
+        var requestOptions = {
+          method: 'GET',
+          redirect: 'follow'
+        };
+        
+        fetch("https://3000-jonpobdum-4geeksfinalba-hnoloyqcjw0.ws-us73.gitpod.io/user_login", requestOptions)
+          .then(response => response.json())
+          .then(result => setStore({usuarios:result}))
+          .catch(error => console.log('error', error));
+      },
+      
+      
 
 
       changeColor: (index, color) => {

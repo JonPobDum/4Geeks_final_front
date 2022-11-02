@@ -25,9 +25,9 @@ function Credencial(props) {
             />
           </button>
           <span className="name mt-3"></span>
-          <span className="idd titulo_nombre">@NOMBRE_USUARIO</span>{" "}
+          <span className="idd titulo_nombre">{props.name}@nombre del usaurio</span>{" "}
           <div className="d-flex flex-row justify-content-center align-items-center gap-2">
-            <span className="idd1 titulo_usuario">correo_usuario</span>
+            <span className="idd1 titulo_usuario">{props.email} correo electronico usuario</span>
             
           </div>
           {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3">
