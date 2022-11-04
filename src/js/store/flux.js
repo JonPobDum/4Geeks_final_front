@@ -49,7 +49,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-hnoloyqcjw0.ws-us73.gitpod.io/api/login",
+          "https://3000-jonpobdum-4geeksfinalba-edkpdthhc6s.ws-us74.gitpod.io/api/login",
           requestOptions
         )
           .then((response) => response.json())
@@ -64,7 +64,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
         //localStorage.setItem("token", result.token <- viene de la api)
-        console.log(correo, contraseña);
+        // console.log(correo);
       },
 
 
@@ -86,7 +86,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-aqx5xd98ze5.ws-us72.gitpod.io/recuperar/clave",
+          "https://3000-jonpobdum-4geeksfinalba-edkpdthhc6s.ws-us74.gitpod.io/recuperar/clave",
           requestOptions
         )
           .then((response) => response.text())
@@ -117,7 +117,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3000-jonpobdum-4geeksfinalba-hnoloyqcjw0.ws-us73.gitpod.io/api/register",
+          "https://3000-jonpobdum-4geeksfinalba-edkpdthhc6s.ws-us74.gitpod.io/api/register",
           requestOptions
         )
           .then((response) => response.json())
@@ -126,6 +126,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((result) =>{
             if (result.register) {
               setStore({ register: result });
+              
             } else {
               setStore({
               name: null,
@@ -135,14 +136,14 @@ const getState = ({ getStore, getActions, setStore }) => {
               password: null,
               
               } );
-              sessionStorage.setItem("currentUser", JSON.stringify(raw));
-              sessionStorage.setItem("isAuthenticated", true);
+              // sessionStorage.setItem("currentUser", JSON.stringify(raw));
+              // sessionStorage.setItem("isAuthenticated", true);
               alert("Usuario Registrado! ahora puedes logear con tu cuenta");
               window.location.href = "/login";
             }
           })
           .catch((error) => console.log("error", error));
-          console.log(name);
+          // console.log(name);
 
         /**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
@@ -166,13 +167,21 @@ const getState = ({ getStore, getActions, setStore }) => {
           redirect: 'follow'
         };
         
-        fetch("https://3000-jonpobdum-4geeksfinalba-hnoloyqcjw0.ws-us73.gitpod.io/user_login", requestOptions)
+        fetch("https://3000-jonpobdum-4geeksfinalba-edkpdthhc6s.ws-us74.gitpod.io/user_login", requestOptions)
           .then(response => response.json())
           .then(result => setStore({usuarios:result}))
           .catch(error => console.log('error', error));
       },
       
+      recuperarClave:(email)=>{
+       
       
+        fetch("https://3000-jonpobdum-4geeksfinalba-edkpdthhc6s.ws-us74.gitpod.io/clave/"+email)
+          .then(response => response.json())
+          .then(result => console.log(result))
+          .catch(error => console.log('error', error));
+      },
+
 
 
       changeColor: (index, color) => {
