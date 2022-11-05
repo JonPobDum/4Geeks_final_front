@@ -3,8 +3,8 @@
     box-sizing: border-box;
 }
 body {
-    background: linear-gradient(to left, #7700aa, #8800ff);
-    text-align:center;
+    background: linear-gradient(to left, #2d2b2d, #8800ff);
+    /* text-align:center; */
     color:#fff;
 }
 h3{

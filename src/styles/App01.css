@@ -46,3 +46,17 @@
     margin-top: 20px;
     text-transform: capitalize;
   }
+
+  .timerdiv{
+    min-height: 30%;
+    min-width: 30%;
+    margin: 0 auto;
+  }
+
+  .boton_1{
+    margin-left: 150px;
+  }
+
+  .settings_1{
+    margin-left: 100px;
+  }

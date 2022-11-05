@@ -24,6 +24,7 @@
 
 body{
 background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-color41) 41%, var(--gradient-color100) 100%);
+
 }
 
 .todo-app {
@@ -33,7 +34,7 @@ background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-
     width: 520px;
     min-height: 600px;
     background: var(--todo-color);
-    text-align: center;
+    /* text-align: center; */
     margin: 128px auto;
     border-radius: 10px;
     padding-bottom: 32px;
@@ -120,7 +121,7 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
 }
 
 .h1_agenda {
-    margin-left: 2%;
+    margin-left: 23%;
     font-family: cursive;
     font-size: 30px;
     color: var(--title);
@@ -132,6 +133,11 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
 
 .li_agenda {
     list-style-type: none;
-    color: white; 
+    color: white;
     
+ }
+ 
+ .icono_1{
+  color: #fff;
+  font-size: 20px;
  }

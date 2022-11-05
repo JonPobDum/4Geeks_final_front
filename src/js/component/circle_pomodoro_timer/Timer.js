@@ -69,7 +69,7 @@ function Timer() {
   if(seconds < 10) seconds = '0'+seconds;
 
   return (
-    <div>
+    <div className='timerdiv col-xl-3 col-md-9 col-sm-12 align-items-center p-5'>
     {/* Componente de barra circular */}
       <CircularProgressbar
         value={percentage}
