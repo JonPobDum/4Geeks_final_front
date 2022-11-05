@@ -29,10 +29,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
 
 .card {
     width: 500px;
-    background-color: #efefef;
+    height: 600px;
+    /* background-color: #efefef; */
     border: none;
     cursor: pointer;
     transition: all 0.5s;
+    background: black;
+    background-image: url("https://www.todofondos.net/wp-content/uploads/paquete-de-fondos-de-pantalla-de-iphone-de-colores-vivos.-wallpaper-para-celular-de-colores.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .image img {
@@ -76,7 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
 
 .actividad {
     height: 40px;
-    width: 150px;
+    width: 300px;
     border: none;
     background-color: #000;
     color: #ffffff;
@@ -98,19 +103,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', end
 } */
 
 .fechayhora {
-    font-size: 14px;
-    color: #a0a0a0;
+    font-size: 20px;
+    color: #080808;
     font-weight: bold
 }
 
 .date {
-    background-color: #ccc
+    
+    background-color: rgb(238, 155, 155)
 }
 
 .titulo_nombre{
+    font-size: 25px;
     color:#000000;
 }
 .titulo_usuario{
+    font-size: 15px;
     color:#000000;
 }
 

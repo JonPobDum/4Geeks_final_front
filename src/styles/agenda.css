@@ -116,7 +116,11 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
     width: 50%;
     border: 3px solid gray;
     padding: 10px;
-    background: var(--agenda-form);
+    /* background: var(--agenda-form);  ACA ESTA EL COLOR INICIAL DEL TODOLIST*/
+    background: black;
+    background-image: url("https://i.pinimg.com/originals/6b/e0/de/6be0de77904f94886bcad3868b523dac.jpg");
+background-repeat: no-repeat;
+background-size: cover;
     
 }
 

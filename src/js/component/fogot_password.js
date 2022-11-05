@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
+import "../../styles/forgot_password.css";
 
 
 
@@ -15,7 +16,7 @@ const sendEmail =(event) =>{
     
 }
 return(
-
+<div className="form_fp">
 <form   id="form" style={{ width: "38rem" }} onSubmit={sendEmail}>
   
   
@@ -36,4 +37,4 @@ return(
   {/* </Link> */}
 </form>
 
-)}
+</div>)}

@@ -11,9 +11,7 @@ background: linear-gradient(to right, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41%, r
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 );
 
 }
-.row {
-  
-}
+
 .bg {
     background-color: white;
 }
