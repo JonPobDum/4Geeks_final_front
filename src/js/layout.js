@@ -7,7 +7,7 @@ import { Login } from "./views/login";
 import { Perfil } from "./views/perfil";
 import { Agenda } from "./views/agenda";
 import { Slideshow } from "./views/carousel";
-import { Demo } from "./views/demo";
+
 import { Single } from "./views/single";
 import { App } from "../js/component/circle_pomodoro_timer/App01.js";
 import { Applayer } from "./views/playermode.js";
@@ -60,9 +60,7 @@ const Layout = () => {
 						<Route exact path="/playermode">
 							<Applayer />
 						</Route>	
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
+						
 						<Route exact path="/single/:theid">
 							<Single />
 						</Route>
