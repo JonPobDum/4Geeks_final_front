@@ -22,8 +22,9 @@
 }
 
 
-body{
-background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-color41) 41%, var(--gradient-color100) 100%);
+body {
+  background-color: #fff;
+/* background: linear-gradient(to right, var(--gradient-color0) 0%, var(--gradient-color41) 41%, var(--gradient-color100) 100%); */
 
 }
 

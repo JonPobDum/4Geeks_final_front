@@ -1,10 +1,11 @@
 body {
-    background: #171af9;
+    background-color: white;
+    /* background: #171af9;
     background: -webkit-linear-gradient(0deg, #171af9 0%, #5d1586 100%);
     background: linear-gradient(0deg, #171af9 0%, #5d1586 100%);
     font-family: "roboto", sans-serif;
     color: black;
-    
+     */
 }
 
 .pomodoro {
@@ -14,8 +15,8 @@ body {
     justify-content: center;
     align-items: center;
     background: #ff4747;
-    background: -webkit-linear-gradient(0deg, #ff4747 0%, #ab65ab 100%);
-    background: linear-gradient(0deg, #ff4747 0%, #ab65ab 100%);
+    /* background: -webkit-linear-gradient(0deg, #ff4747 0%, #ab65ab 100%);
+    background: linear-gradient(0deg, #ff4747 0%, #ab65ab 100%); */
     border-radius: 50%;
     width: 2em;
     height: 2em;

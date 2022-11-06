@@ -1,6 +1,22 @@
-body{
-    
-    background: black;
+:root {
+    --gradient-color0: rgba(48,3,35,1);
+    --gradient-color41: rgba(48,3,35,1);
+    --gradient-color100: rgba(145,32,107,1);
+    --agenda-form: #151825;
+    --title: white;
+    --todo-row-color0: rgba(20, 159, 255, 1) 0%;
+    --todo-row-color100: rgba(17, 122, 255, 1) 0%;
+    --icons-size: 24px;
+    --delete-icon-color: white;
+    --input-color: white;
+    --todo-button0: ;
+    --todo-button100: ;
+    --todo-color: #161a2b;
+}
+
+body {
+    background-color: white;
+    /* background: black;
     background: rgba(48,3,35,1);
 background: -moz-linear-gradient(left, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41%, rgba(145,32,107,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(48,3,35,1)), color-stop(41%, rgba(48,3,35,1)), color-stop(100%, rgba(145,32,107,1)));
@@ -8,7 +24,7 @@ background: -webkit-linear-gradient(left, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41
 background: -o-linear-gradient(left, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41%, rgba(145,32,107,1) 100%);
 background: -ms-linear-gradient(left, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41%, rgba(145,32,107,1) 100%);
 background: linear-gradient(to right, rgba(48,3,35,1) 0%, rgba(48,3,35,1) 41%, rgba(145,32,107,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 ); */
 
 }
 

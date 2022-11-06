@@ -19,15 +19,16 @@
 }
 
 body {
-    
-    background: rgba(48,3,35,1);
+    background-color: black;
+    /* background: rgba(48,3,35,1);
 background: -moz-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, var(--bg-gradient-0)), color-stop(41%, var(--bg-gradient-0)), color-stop(100%, var(--bg-gradient-100)));
 background: -webkit-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
 background: -o-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
 background: -ms-linear-gradient(left, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
 background: linear-gradient(to right, var(--bg-gradient-0) 0%, var(--bg-gradient-0) 41%, var(--bg-gradient-100) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#300323', endColorstr='#91206b', GradientType=1 ); */
+
 
 }
 
