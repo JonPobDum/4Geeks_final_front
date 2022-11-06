@@ -20,7 +20,8 @@ export const Login = () =>{
   const {actions} = useContext(Context);
   const history = useHistory();
  
-  return  <div class="container w-75 mt-5">
+  return  <body className="login">
+ <div class="container w-75 mt-5">
   
   <div className="row align-items-stretch">
                
@@ -83,5 +84,8 @@ export const Login = () =>{
                   </div>
             </div>
       </div>
+
+  </body>
+ 
 };
     

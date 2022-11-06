@@ -39,7 +39,7 @@ export function Applayer() {
   }, [currentSongIndex]);
 
   return (
-    <body>
+    <body className="player">
     
     <div className="App">
           <div className="row align-items-stretch main">

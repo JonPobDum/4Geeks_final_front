@@ -67,7 +67,7 @@ const Layout = () => {
 							<Single />
 						</Route>
 						<Route>
-							<h1>Coming soon...</h1>
+							<img src="https://imagizer.imageshack.com/img922/9083/UfH47l.png" className="rounded mx-auto d-block"/>
 						</Route>
 					</Switch>
 					<Footer />

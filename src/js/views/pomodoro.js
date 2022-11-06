@@ -10,8 +10,6 @@ export function Pomodoro () {
 	const [displayMessage, setDisplayMessage] = useState(false);
 
 	const  history = useHistory();
-
-
 	useEffect(() => {
 
 	//  PARA NO MOSTRAR LA VISTA AL MENOS QUE TENGAS TOKEN	
@@ -50,16 +48,19 @@ export function Pomodoro () {
 	
 
 
-	return <div className='pomodoro m-3 sm-3 md-6 lg-9 xl-12'>
-				<div className='timer m-3 sm-3 md-6 lg-9 xl-12'> {timerMinutes}:{timerSeconds} </div>
-				
-				<div className='message m-3'>
-					{displayMessage && <div className='message m-3'><h5>Bien hecho! tómate un descanso.</h5></div>}
-				</div> 
-				<div><br/>
-				</div>
-				<div>
-				<Applayer />
-				</div>
-			</div>
+	return <body className='pomodoro'>
+				<div className='pomodoro m-3 sm-3 md-6 lg-9 xl-12'>
+						<div className='timer m-3 sm-3 md-6 lg-9 xl-12'> {timerMinutes}:{timerSeconds} </div>
+						
+						<div className='message m-3'>
+							{displayMessage && <div className='message m-3'><h5>Bien hecho! tómate un descanso.</h5></div>}
+						</div> 
+							<div><br/>
+							</div>
+						<div>
+						<Applayer />
+						</div>
+					</div>
+		</body>
+		
 }

@@ -8,7 +8,7 @@ export const Carousel  = () =>{
     const history = useHistory()
     const goToUrl = url=>history.push(url)
     return(
-        <body>
+        <body className="carousel">
               <h1 className="h1_carousel">
                 Choose your activity
             </h1>

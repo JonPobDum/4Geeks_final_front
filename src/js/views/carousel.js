@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { Link, useParams, useHistory } from "react-router-dom";
 import { Carousel } from "../component/carousel";
 import { Curtain } from "../component/curtain";
+
 // import "../../styles/curtain.css";
 
 export const Slideshow = () => {
@@ -20,14 +21,12 @@ export const Slideshow = () => {
        },[])
 
     
-    return <div>
-       <div className="row d-block d-md-none">
-            <Carousel/>
-       </div>
-       <div className="row d-none d-md-block">
-            <Curtain/>
-       </div>
-      
-        
-    </div>
+    return     <div>
+                  <div className="row d-block d-md-none">
+                        <Carousel/>
+                  </div>
+                  <div className="row d-none d-md-block">
+                        <Curtain/>
+                  </div>
+               </div>
 }
