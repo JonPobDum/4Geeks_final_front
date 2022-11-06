@@ -3,7 +3,6 @@ import { Link, useParams, useHistory } from "react-router-dom";
 import "../../styles/agenda.css";
 
 import { Context } from "../store/appContext";
-
 export const Agenda = () => {
 
 // CONSTANTES PARA APLICAR METODO PARA INICIAR AGENDA CON TOKEN.
@@ -83,28 +82,25 @@ export const Agenda = () => {
   };
 
   return (
-    <body className="agenda">
-          <div className="container agenda_form">
-            <form type="submit" onSubmit={agregarDato}>
-              <h1 className="Titulo h1_agenda">What's the Plan for Today?</h1>
-              {/* <p> Tareas:</p> */}
-              <input className="input_agenda" maxLength={70} type="text" placeholder="ingrese sus actividades"></input>
-            </form>
-            <ul>
-              {lista.map((elemento, indice) => {
-                if (elemento.done==false)
-                return (
-                  <li className="li_agenda" key={indice}>
-                    {elemento.label}{" "}
-                    <button className="btn" onClick={() => DeleteItems(indice)}>
-                    <i className="fas fa-times icono_1"></i>
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-    </body>
-
+                <div className="container agenda_form">
+                              <form type="submit" onSubmit={agregarDato}>
+                                <h1 className="Titulo h1_agenda">What's the Plan for Today?</h1>
+                                {/* <p> Tareas:</p> */}
+                                <input className="input_agenda" maxLength={70} type="text" placeholder="ingrese sus actividades"></input>
+                              </form>
+                              <ul>
+                                {lista.map((elemento, indice) => {
+                                  if (elemento.done==false)
+                                  return (
+                                    <li className="li_agenda" key={indice}>
+                                      {elemento.label}{" "}
+                                      <button className="btn" onClick={() => DeleteItems(indice)}>
+                                      <i className="fas fa-times icono_1"></i>
+                                      </button>
+                                    </li>
+                                  );
+                                })}
+                              </ul>   
+                          </div>       
   );
 };

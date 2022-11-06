@@ -7,7 +7,7 @@ export const Register = () => {
   const { actions } = useContext(Context);
   const history = useHistory();
   return (
-    <body className="register">
+    <div className="register">
           <div class="container w-75 mt-5">
                 <div className="row align-items-stretch">
                   <div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
@@ -166,6 +166,6 @@ export const Register = () => {
                   </div>
                 </div>
               </div>
-    </body> 
+    </div> 
   );
 };

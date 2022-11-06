@@ -21,7 +21,7 @@ export const Slideshow = () => {
        },[])
 
     
-    return     <div>
+    return  (   <div>
                   <div className="row d-block d-md-none">
                         <Carousel/>
                   </div>
@@ -29,4 +29,5 @@ export const Slideshow = () => {
                         <Curtain/>
                   </div>
                </div>
-}
+    );
+};

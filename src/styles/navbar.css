@@ -1,28 +1,7 @@
-:root {
-    --body-bg: rgb(0, 247, 255)
-    --gradient-color0: rgba(48,3,35,1);
-    --gradient-color41: rgba(48,3,35,1);
-    --gradient-color100: rgba(145,32,107,1);
-    --agenda-form: #151825;
-    --title: white;
-    --content: black;
-    --todo-row-color0: rgba(20, 159, 255, 1) 0%;
-    --todo-row-color100: rgba(17, 122, 255, 1) 0%;
-    --icons-size: 24px;
-    --delete-icon-color: white;
-    --input-color: white;
-    --todo-button0: ;
-    --todo-button100: ;
-    --todo-color: #161a2b;
-}
-
-
-
-
 .m120 {
     width: 120px;
     }
-    
+
     .m240 {
         width: 240px;
         }
@@ -36,4 +15,9 @@
     }
     .nav_estilo{
         height: 40px;
+    }
+
+    .navbarNav {
+        z-index: auto;
+
     }

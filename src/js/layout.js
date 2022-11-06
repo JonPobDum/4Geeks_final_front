@@ -11,12 +11,13 @@ import { Slideshow } from "./views/carousel";
 import { Single } from "./views/single";
 import { App } from "../js/component/circle_pomodoro_timer/App01.js";
 import { Applayer } from "./views/playermode.js";
+import { Forgot_view } from "./views/forgot_password";
 
 import injectContext from "./store/appContext";
 import ScrollToTop from "./component/scrollToTop";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import {Forgotpassword} from "./component/fogot_password"
+
 
 //create your first component
 const Layout = () => {
@@ -46,7 +47,7 @@ const Layout = () => {
 							<Perfil />
 						</Route>
 						<Route exact path="/forgot_password">
-							<Forgotpassword />
+							<Forgot_view />
 						</Route>
 
 						<Route exact path="/pomodoro">
