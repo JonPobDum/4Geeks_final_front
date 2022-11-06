@@ -11,7 +11,7 @@ import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import { App } from "../js/component/circle_pomodoro_timer/App01.js";
 import { Applayer } from "./views/playermode.js";
-
+import { Uploader } from "./views/upload.js";
 import injectContext from "./store/appContext";
 import ScrollToTop from "./component/scrollToTop";
 import { Navbar } from "./component/navbar";
@@ -55,6 +55,10 @@ const Layout = () => {
 
 						<Route exact path="/todolist">
 							<Agenda />
+						</Route>
+
+						<Route exact path="/uploader">
+							<Uploader/>
 						</Route>
 
 						<Route exact path="/playermode">

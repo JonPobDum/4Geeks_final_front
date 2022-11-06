@@ -1,9 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import { Player } from '../component/Audioplayer/player';
 import "../../styles/player.css"
+
+
+
 export function Applayer() {
+  
+  
+  
   const [songs] = useState([
-    {
+   {
       title: "SoundHelix Song",
       artist: "T. Schürge",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3"
