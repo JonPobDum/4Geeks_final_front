@@ -27,20 +27,20 @@ const sendEmail =(event) =>{
                   <div className="form_fp">
                         <form   id="form" style={{ width: "auto" }} onSubmit={sendEmail}>
                                     <img src="https://imagizer.imageshack.com/img924/6517/IZAfXn.png" height="150px" className="mx-auto mt-2 d-block"/>
-                              <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label" style={{color: "white"}}>Name</label>
-                                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required  name='name'></input>
+                              <div className="mb-3">
+                                    <label for="exampleInputEmail1" className="form-label text_p" style={{color: "white"}}>Name</label>
+                                          <input type="text" className="form-control input_p" id="exampleInputEmail1" aria-describedby="emailHelp" required  name='name'></input>
                                     <div id="emailHelp" class="form-text" style={{color: "white"}}></div>
                               </div>
 
                               <div className="mb-3">
-                                    <label for="exampleInputEmail1" className="form-label" style={{color: "white"}}>Email address</label>
-                                          <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required name='email'></input>
-                                    <div id="emailHelp" className="form-text" style={{color: "white"}}>We'll never share your email with anyone else.</div>
+                                    <label for="exampleInputEmail1" className="form-label text_p" style={{color: "white"}}>Email address</label>
+                                          <input type="email" className="form-control input_p" id="exampleInputEmail1" aria-describedby="emailHelp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required name='email'></input>
+                                    <div id="emailHelp" className="form-text text_p" style={{color: "white"}}>We'll never share your email with anyone else.</div>
                               </div>
 
                         {/* <Link to="/login"> */}
-                        <button id='button' type="submit" className="btn btn-primary mb-5" style={{ width: "80%" }}>Ask your password</button>
+                        <button id='button' type="submit" className="btn btn-primary mb-5 buttton_p" style={{ width: "80%" }}>Ask your password</button>
                         {/* </Link> */}
                         </form>
                   </div>
