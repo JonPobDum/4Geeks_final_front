@@ -8,7 +8,7 @@ export const Carousel  = () =>{
     const history = useHistory()
     const goToUrl = url=>history.push(url)
     return(
-        <body className="carousel">
+        <div className="carousel">
               <h1 className="h1_carousel">
                 Choose your activity
             </h1>
@@ -54,6 +54,6 @@ export const Carousel  = () =>{
                 <span className="visually-hidden">Next</span>
             </button>
             </div>
-        </body>
+        </div>
     )
 }
