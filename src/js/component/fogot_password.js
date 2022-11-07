@@ -26,7 +26,7 @@ const sendEmail =(event) =>{
                   
                   <div className="form_fp">
                         <form   id="form" style={{ width: "auto" }} onSubmit={sendEmail}>
-                              <img src="https://imagizer.imageshack.com/img924/6517/IZAfXn.png" height="150px" className="mx-auto mt-2 d-block"/>
+                                    <img src="https://imagizer.imageshack.com/img924/6517/IZAfXn.png" height="150px" className="mx-auto mt-2 d-block"/>
                               <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label" style={{color: "white"}}>Name</label>
                                           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required  name='name'></input>

@@ -16,7 +16,7 @@ function Credencial(props) {
               
               <div className="row align-items-stretch">
 										<div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
-											<img src="https://imagizer.imageshack.com/img924/2825/rsA89n.png" className="img-fluid portada" alt="..." />                    
+											    <img src="https://imagizer.imageshack.com/img924/2825/rsA89n.png" className="img-fluid portada" alt="..." />                    
 										</div>
 
               <div className="card p-4">
@@ -33,7 +33,7 @@ function Credencial(props) {
                   <span className="name mt-3"></span>
                   <span className="idd titulo_nombre">{props.name}@nombre del usaurio</span>{" "}
                   <div className="d-flex flex-row justify-content-center align-items-center gap-2">
-                    <span className="idd1 titulo_usuario">{props.email} correo electronico usuario</span>
+                      <span className="idd1 titulo_usuario">{props.email} correo electronico usuario</span>
                     
                   </div>
                   {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3">
@@ -43,7 +43,7 @@ function Credencial(props) {
                   </div>{" "} */}
                   <div className=" d-flex mt-2">
                   <Link to="/carousel">
-                    <button className="actividad btn-dark"> my activities </button>
+                    <button className="actividad btn-dark"> Choose your activity </button>
                     </Link>
                   </div>
                   {/* <div className=" d-flex mt-2">

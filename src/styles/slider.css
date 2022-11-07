@@ -18,14 +18,12 @@
     --todo-color: #161a2b;
 }
 
-
-
-
 /* frame del slider de trabajo */
 .slider{
     height: 40px;
     border: 2px solid var(--red);
     border-radius: 20px;
+    width: 70%;
 }
 /* boton del deslizador de trabajo*/
 .thumb{
@@ -38,6 +36,7 @@
 /* frame del slider de descanzo */
 .slider.green{
     border: 2px solid var(--green);
+    width: 70%;
 }
 /* boton del deslizador de descanzo */
 .slider.green .thumb{

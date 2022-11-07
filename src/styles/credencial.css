@@ -34,13 +34,16 @@ body {
     width: 500px;
     height: 600px;
     /* background-color: #efefef; */
-    border: none;
+    border-radius: 0px 40px 40px 0px;
     cursor: pointer;
     transition: all 0.5s;
-    background: black;
-    background-image: url("https://www.todofondos.net/wp-content/uploads/paquete-de-fondos-de-pantalla-de-iphone-de-colores-vivos.-wallpaper-para-celular-de-colores.jpg");
+    background: white;
+    background-image: ;
 background-repeat: no-repeat;
 background-size: cover;
+-webkit-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75); 
 }
 
 .image img {
@@ -120,6 +123,7 @@ background-size: cover;
     font-size: 25px;
     color:#000000;
 }
+
 .titulo_usuario{
     font-size: 15px;
     color:#000000;
@@ -127,5 +131,12 @@ background-size: cover;
 
 .titulo_welcome{
     color:#000000;
+}
 
+.portada {
+    border-radius: 30px 0px 0px 30px;
+    height: 100%;
+    -webkit-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75); 
 }
