@@ -61,6 +61,6 @@ export function Pomodoro () {
 						<Applayer />
 						</div>
 					</div>
-		<div>
+		</div>
 		
 }
