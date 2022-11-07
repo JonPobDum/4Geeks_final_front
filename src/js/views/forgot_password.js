@@ -8,8 +8,5 @@ import { Context } from "../store/appContext";
 export const Forgot_view = () => {
         return (
                 <Forgotpassword/>
-               
-         
-
-  );
+        );
 };

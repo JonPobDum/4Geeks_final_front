@@ -13,6 +13,12 @@ function Credencial(props) {
 
   return (
         <div className="container mt-4 mb-4 p-3 d-flex justify-content-center">
+              
+              <div className="row align-items-stretch">
+										<div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
+											<img src="https://imagizer.imageshack.com/img924/2825/rsA89n.png" className="img-fluid portada" alt="..." />                    
+										</div>
+
               <div className="card p-4">
                 <div className=" image d-flex flex-column justify-content-center align-items-center">
                   {/* ESTE ES EL CIRCULO DONDE ESTA LA IMAGEN Y EL COLOR ESTA EN BOOSTRAP */}
@@ -68,9 +74,10 @@ function Credencial(props) {
                     {" "}
                     <span className="fechayhora">{now.toDateString()}</span>{" "}
                   </div>{" "}
-                </div>{" "}
+                </div>{" "}              
               </div>
-            </div>    
+            </div>
+      </div>    
     );
 }
 

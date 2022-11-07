@@ -48,8 +48,7 @@ export function Pomodoro () {
 	
 
 
-	return <div className='Timer'>
-				<div className='pomodoro m-3 sm-3 md-6 lg-9 xl-12'>
+	return (  <div className='pomodoro m-3 sm-3 md-6 lg-9 xl-12'>
 						<div className='timer m-3 sm-3 md-6 lg-9 xl-12'> {timerMinutes}:{timerSeconds} </div>
 						
 						<div className='message m-3'>
@@ -61,6 +60,6 @@ export function Pomodoro () {
 						<Applayer />
 						</div>
 					</div>
-		</div>
+	);
 		
-}
+};

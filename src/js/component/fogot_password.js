@@ -16,9 +16,18 @@ const sendEmail =(event) =>{
     
 }
       return(
+            <div class="container w-75 mt-5">
+  
+            <div className="row align-items-stretch">
+                         
+                            <div class="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
+                                  <img class="img-fluid position-absolute top-0 end-0 bg2 r1" src="https://imagizer.imageshack.com/img924/2575/XCBZCz.png" alt="Login image"></img>
+                            </div> 
+            
+            
             <div className="form_fp">
                   <form   id="form" style={{ width: "38rem" }} onSubmit={sendEmail}>
-                  
+                        <img src="https://imagizer.imageshack.com/img924/6517/IZAfXn.png" height="150px" className="mx-auto d-block"/>
                         <div class="mb-3">
                               <label for="exampleInputEmail1" class="form-label" style={{color: "white"}}>Name</label>
                               <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required  name='name'></input>
@@ -36,7 +45,8 @@ const sendEmail =(event) =>{
                   {/* </Link> */}
                   </form>
             </div>
-
+      </div>
+      </div>
       
        
 );

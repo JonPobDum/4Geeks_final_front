@@ -39,24 +39,21 @@ export function Applayer() {
     });
   }, [currentSongIndex]);
 
-  return (
-    <body className="player">
-    
-    <div className="App">
-          <div className="row align-items-stretch main">
-                <div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 ">
-                      <img className="img-fluid position-relative" src="https://i.ytimg.com/vi/a3H5hr8OLu8/maxresdefault.jpg"></img>
-                </div>
-                <div className="col img-2">
-                        <Player className
-                          currentSongIndex={currentSongIndex} 
-                          setCurrentSongIndex={setCurrentSongIndex} 
-                          nextSongIndex={nextSongIndex} 
-                          songs={songs}
-                        />
-                </div>
-          </div>
+  return (  <div className="App">
+                  <div className="row align-items-stretch main">
+                        <div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 ">
+                              <img className="img-fluid position-relative" src="https://i.ytimg.com/vi/a3H5hr8OLu8/maxresdefault.jpg"></img>
+                        </div>
+                        <div className="col img-2">
+                                <Player className
+                                  currentSongIndex={currentSongIndex} 
+                                  setCurrentSongIndex={setCurrentSongIndex} 
+                                  nextSongIndex={nextSongIndex} 
+                                  songs={songs}
+                                />
+                        </div>
+                  </div>
     </div>
-    </body>
+    
   );
 }
