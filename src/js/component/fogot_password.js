@@ -15,8 +15,7 @@ const sendEmail =(event) =>{
     .catch (error => console.log(error))  
     
 }
-return(
-      <div className="forgot">
+      return(
             <div className="form_fp">
                   <form   id="form" style={{ width: "38rem" }} onSubmit={sendEmail}>
                   
@@ -38,7 +37,7 @@ return(
                   </form>
             </div>
 
-      </div>
+      
        
 );
 };

@@ -4,8 +4,7 @@ import "../../styles/home.css";
 
 export const Home = () => {
 
-	return  <body className="home">
-					<div className="container w-75 mt-5">
+	return <div className="container w-75 mt-5">
 									<div className="row align-items-stretch">
 										<div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
 											<img src="https://imagizer.imageshack.com/img923/5812/J6VbIM.png" className="img-fluid portada" alt="..." />                    
@@ -63,8 +62,4 @@ export const Home = () => {
 								</div>
 							</div>
 					</div>
-
-</body>
-	
-
 };
