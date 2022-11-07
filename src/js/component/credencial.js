@@ -22,7 +22,7 @@ function Credencial(props) {
               <div className="card p-4">
                 <div className=" image d-flex flex-column justify-content-center align-items-center">
                   {/* ESTE ES EL CIRCULO DONDE ESTA LA IMAGEN Y EL COLOR ESTA EN BOOSTRAP */}
-                  <button className=" circlePerfil btn btn-secondary">
+                  <button className=" circlePerfil btn ">
                     {" "}
                     <img
                       src="https://i.imgur.com/wvxPV9S.png"image
@@ -50,7 +50,7 @@ function Credencial(props) {
                     <button className="actividad btn-dark"> Go to Carrousel</button>
                   </div> */}
                   <div className=" d-flex mt-2">
-                    <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>log out </button>
+                    <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>Log out </button>
                   </div>
                   <div className="text mt-3 titulo_welcome">
                     <p>Welcome to brain manager!</p>

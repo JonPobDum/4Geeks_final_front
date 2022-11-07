@@ -38,7 +38,7 @@ body {
     cursor: pointer;
     transition: all 0.5s;
     background: white;
-    background-image: ;
+    background-image: url("https://thevioletjournal.com/wp-content/uploads/2021/12/aesthetic-clouds-wallpaper-1-768x1365.png") ;
 background-repeat: no-repeat;
 background-size: cover;
 -webkit-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
@@ -55,6 +55,7 @@ box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
 }
 
 .circlePerfil {
+    background: rgb(228, 170, 255);
     height: 140px;
     width: 140px;
     border-radius: 50%

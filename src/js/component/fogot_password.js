@@ -2,16 +2,19 @@ import React, { Component } from "react";
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 import "../../styles/forgot_password.css";
+import { useHistory } from "react-router-dom";
 
 
 
 export const Forgotpassword = () =>{
-     
+let history = useHistory();     
 const sendEmail =(event) =>{
     event.preventDefault();
 
     emailjs.sendForm('service_grx5xcq','template_dvxh034',event.target,'s0W3MhRzWmErfBoDS')
     .then(response => console.log(response) )
+    alert("correo enviado!")
+    history.push("/")  
     .catch (error => console.log(error))  
     
 }
