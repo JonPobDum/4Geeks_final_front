@@ -29,8 +29,6 @@
 body {
   background-color: var(--body-bg-agenda);
   background-image: var(--img-bg);
-
-  
  }
 
 
@@ -75,6 +73,7 @@ body {
 
 .todo-input::placeholder {
     color: var(--input-color);
+    margin-left: 10px;
 
 }
 
@@ -86,6 +85,7 @@ body {
     width: 320px;
     background: transparent;
     color: #fff;
+    margin-left: 10px;
   }
 
 .todo-button {
@@ -118,37 +118,47 @@ background: linear-gradient(90deg, var(--todo-row-color0, var(--todo-row-color10
 }
 
 .agenda_form{
+    border-radius: 20px; 
     margin: auto;
     margin-top: 50px;
     width: 50%;
-    border: 3px solid gray;
+    border: 15px solid #403C95;
     padding: 10px;
     /* background: var(--agenda-form);  ACA ESTA EL COLOR INICIAL DEL TODOLIST*/
     background: black;
     background-image: url("https://i.pinimg.com/originals/6b/e0/de/6be0de77904f94886bcad3868b523dac.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+
+-webkit-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75); 
     
 }
 
 .h1_agenda {
-    margin-left: 23%;
+    margin-left: 10%;
     font-family: cursive;
     font-size: 30px;
     color: var(--title);
 }
 
 .input_agenda{
-    width: 100%;
+    width: 80%;
+    margin-left: 10px;
 }
 
 .li_agenda {
     list-style-type: none;
     color: white;
-    
  }
  
  .icono_1{
   color: #fff;
   font-size: 20px;
+ }
+
+ .Advise {
+  font-size: 15px;
+  color: white;
  }

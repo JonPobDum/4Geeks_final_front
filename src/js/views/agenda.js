@@ -26,13 +26,6 @@ export const Agenda = () => {
 
   useEffect(() => {
     getTask();
-
-    // ACA ESTA LA CONDICION EN DONDE REVISO TOKEN PARA INGRESAR A AGENDA
-    // if (localStorage.getItem("token")) {
-    //     history.push("/todolist");
-    // } else {
-    //   history.push("/");
-    // }
   }, []);
 
   /*TODO LIST */
@@ -86,7 +79,7 @@ export const Agenda = () => {
                               <form type="submit" onSubmit={agregarDato}>
                                 <h1 className="Titulo h1_agenda">What's the Plan for Today?</h1>
                                 {/* <p> Tareas:</p> */}
-                                <input className="input_agenda" maxLength={70} type="text" placeholder="ingrese sus actividades"></input>
+                                <input className="input_agenda" maxLength={70} type="text" placeholder="enter your task"></input>
                               </form>
                               <ul>
                                 {lista.map((elemento, indice) => {
@@ -96,11 +89,48 @@ export const Agenda = () => {
                                       {elemento.label}{" "}
                                       <button className="btn" onClick={() => DeleteItems(indice)}>
                                       <i className="fas fa-times icono_1"></i>
+                                      
+                                     
                                       </button>
                                     </li>
                                   );
                                 })}
-                              </ul>   
-                          </div>       
+                              </ul>  
+                              <p className="Advise">
+                                  ⚠️ Advice: Get More Done with tThese Simple Tips for Better To-Do Lists
+                              </p>
+                              <p className="Advise">
+                                  1. Choose the Right App...or Paper: are easy to edit, which means you can update information quickly, are hard to lose because the list itself is usually saved in the cloud, can sort your tasks by priority, due date, or alphabetically, and, let you assign tasks to other people and get notified when they complete them
+                              </p>
+                              <p className="Advise">
+                                  2. Write Down Your Tasks as Soon as You Think of Them 
+                              </p>
+                              <p className="Advise">
+                                  3. Assign Due Dates
+                              </p>            
+                              <p className="Advise">
+                                  4. Revise Your To-Do Lists Daily
+                              </p>               
+                              <p className="Advise">
+                                  5. Limit Yourself to 3–5 Tasks per Day
+                              </p>
+                              <p className="Advise">
+                                  6. Put Tasks on Your To-Do List, Not Goals
+                              </p>
+                              <p className="Advise">
+                                  7. Check Those Boxes 
+                              </p>
+                </div> 
+  
+  
+  
+  
   );
+
+
+
 };
+
+
+
+
