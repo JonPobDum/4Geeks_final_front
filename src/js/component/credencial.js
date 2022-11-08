@@ -13,7 +13,7 @@ function Credencial(props) {
   let now = new Date();
 
   return (
-        <div className="container mt-4 mb-4 p-3 d-flex justify-content-center">
+        <div className="container mt-4 mb-4 p-3 d-flex justify-content-center perfil_body">
               
               <div className="row align-items-stretch">
 										<div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
