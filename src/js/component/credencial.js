@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import "../../styles/credencial.css";
+import { QuoteContainer } from "../component/quoteContainer";
 
 function Credencial(props) {
   const {actions} = useContext(Context);
@@ -53,7 +54,7 @@ function Credencial(props) {
                     <button className="actividad btn-dark" onClick={()=> actions.aa(history)}>Log out </button>
                   </div>
                   <div className="text mt-3 titulo_welcome">
-                    <p>Welcome to brain manager!</p>
+                  <QuoteContainer />
                   </div>
                   <div className="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">
                     {" "}

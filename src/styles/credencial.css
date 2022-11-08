@@ -111,6 +111,7 @@ box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
 
 .fechayhora {
     font-size: 20px;
+    margin: auto;
     color: #080808;
     font-weight: bold
 }
@@ -140,4 +141,8 @@ box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75); 
+}
+
+.text_api{
+    font-size: 13px;
 }

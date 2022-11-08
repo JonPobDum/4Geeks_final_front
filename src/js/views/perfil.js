@@ -2,6 +2,7 @@ import React,{useEffect,useContext} from "react";
 import { Context } from "../store/appContext";
 import Credencial  from "../component/credencial";
 import { useHistory } from "react-router-dom";
+import { QuoteContainer } from "../component/quoteContainer";
 
 export const Perfil = () =>{
 
@@ -21,7 +22,10 @@ export const Perfil = () =>{
       },[])
 
 
-    return <Credencial/>
+    return  <>
+    
+    <Credencial/>
+  </>
     
     // <div>
       
