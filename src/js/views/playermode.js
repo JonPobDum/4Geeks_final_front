@@ -1,31 +1,32 @@
 import React, {useState, useEffect} from 'react';
 import { Player } from '../component/Audioplayer/player';
 import "../../styles/player.css"
-import "../../img/mario"
-
 
 export function Applayer() {
   const [songs] = useState([
     {
-      title: "SoundHelix Song",
+      title: "Prueba archivo",
       artist: "T. Schürge",
-      src: ""
+      src: "https://myNoise.net/Data/BINAURAL/demo.mp3"
     },
+
     {
       title: "SoundHelix Song 12",
       artist: "T. Schürge",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
     },
+
     {
       title: "SoundHelix Song 15",
       artist: "T. Schürge",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3"
     },
+
     {
       title: "SoundHelix Song 16",
       artist: "T. Schürge",
       src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3"
-    }
+    },
   ]);
 
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
