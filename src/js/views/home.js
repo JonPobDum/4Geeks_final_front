@@ -9,7 +9,7 @@ export const Home = () => {
 										<div className="col d-none d-lg-block col-sm-12 col-md-5 col-xl-6 position-relative">
 											<img src="https://imagizer.imageshack.com/img923/5812/J6VbIM.png" className="img-fluid portada" alt="..." />                    
 										</div>
-										<div className="col bg">
+										<div className="col bg1">
 											<div className="row">
 												<div className="row align-items-stretch">
 													<div className="col">
@@ -17,7 +17,7 @@ export const Home = () => {
 														<p>We mix up a Pomodoro timer, Binaurals beats and a planing agenda.</p>
 													</div>	
 													<div className="col-2">
-															<img src="https://cdn0.iconfinder.com/data/icons/brain-activity-flat-style/150/thinking-512.png" alt="..." className="img_1"/>
+															<img src="https://imagizer.imageshack.com/img923/6497/95OkLs.png" alt="..." className="img_1"/>
 													</div>
 												</div>
 													<div className="row">
@@ -36,11 +36,11 @@ export const Home = () => {
 															<p>All of those kind of brainwaves are related to an activity such ass: meditation, concentration, learning, relax, deep sleep, dreams, creativity, etc.</p>
 															<p>A binaural beat is an illusion created by the brain when you listen to two tones with slightly different frequencies at the same time. Your brain interprets the two tones as a beat of its own. The two tones align with your brain waves to produce a beat with a different frequency. This frequency is the difference in hertz (Hz) between the frequencies of the two tones.</p>
 															<p>When you listen to binaural beats, your brain activity matches the frequency set by the frequency of the beat. This is called the frequency-following effect. This means you can use binaural beats to entrain your mind to reach a certain mental state.</p>
-															<img src="https://cdn0.iconfinder.com/data/icons/brain-activity-flat-style/150/thinking-512.png" alt="..." className="img_1"/>
+															{/* <img src="https://cdn0.iconfinder.com/data/icons/brain-activity-flat-style/150/thinking-512.png" alt="..." className="img_1"/> */}
 													</div>
 													<div className="col">
 															<p>Some claimed benefits of binaural beats therapy may include: reduced stress, reduced anxiety, increased focus, increased concentration, increased motivation, increased confidence, and deeper meditation.</p>
-															<img src="https://cdn0.iconfinder.com/data/icons/brain-activity-flat-style/150/thinking-512.png" alt="..." className="img_1"/>
+															{/* <img src="https://cdn0.iconfinder.com/data/icons/brain-activity-flat-style/150/thinking-512.png" alt="..." className="img_1"/> */}
 															<p>We aspire that you use this tools everyday to be sharp about your concentration and productive performance.</p>
 													</div>
 												</div>
