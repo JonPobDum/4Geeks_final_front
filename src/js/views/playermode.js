@@ -5,27 +5,27 @@ import "../../styles/player.css"
 export function Applayer() {
   const [songs] = useState([
     {
-      title: "Prueba archivo",
+      title: "Gamma",
       artist: "T. Schürge",
-      src: "https://myNoise.net/Data/BINAURAL/demo.mp3"
+      src: "https://freebinaural.com/wp-content/uploads/2020/10/Awake-_-Gamma-Wave-Binaural-Beats-_-Focus-Memory-Studying-_-Relaxation-Healing.mp3"
     },
 
     {
-      title: "SoundHelix Song 12",
-      artist: "T. Schürge",
-      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+      title: "Alpha",
+      artist: "Creative Commons",
+      src: "https://freebinaural.com/wp-content/uploads/2020/10/DNA-Repair-Frequency-_-Healing-Theta-Meditation-_-Cell-Regeneration-w_-Binaural-Beats.mp3"
     },
 
     {
-      title: "SoundHelix Song 15",
+      title: "Delta",
       artist: "T. Schürge",
-      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3"
+      src: "https://freebinaural.com/wp-content/uploads/2020/09/Delta-Binaural-Beat.mp3"
     },
 
     {
-      title: "SoundHelix Song 16",
+      title: "Beta",
       artist: "T. Schürge",
-      src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3"
+      src: "https://freebinaural.com/wp-content/uploads/2020/12/Beta-12.5Hz-Free-Binaural-Beats.mp3"
     },
   ]);
 
