@@ -24,7 +24,9 @@
 
 
 
-
+.bars {
+  margin-left: 100px;
+}
 
 
 body {
@@ -34,11 +36,11 @@ body {
     color:#fff; */
 }
 h3{
-    text-shadow:1px 1px 1px #fff;
+    ;
 }
 /* Start  styling the page */
 audio {
-  width: 60%;
+  width: 100%;
 }
 audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
     margin: 0;
@@ -52,7 +54,7 @@ audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
     position: relative;
 }
 .container-audio .colum1:last-child {
-    margin: 0;
+    margin-left:;
 }
 .container-audio .colum1 .row {
     width: 100%;

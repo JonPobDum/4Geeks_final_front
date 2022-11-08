@@ -3,7 +3,8 @@ import { Controls } from './controls';
 import { Details } from './details';
 import { Audiobars } from './audiobars';
 import "../../../styles/audiobars.css"
-
+import "../../../styles/play.css"
+import "../../../styles/player.css"
 
 export function Player(props) {
     const audioEl = useRef(null);
@@ -48,16 +49,18 @@ export function Player(props) {
        
         <div className="c-player">
             
-            <audio src={props.songs[props.currentSongIndex].src} ref={audioEl}></audio>
+            <audio className="title" src={props.songs[props.currentSongIndex].src} ref={audioEl}></audio>
             
             <Details song={props.songs[props.currentSongIndex]} />
-            <Controls isPlaying={isPlaying} setIsPlaying={setIsPlaying} SkipSong={SkipSong} />
-            <Audiobars />
-            <p className='mt-4'>Next up: <span>{props.songs[props.nextSongIndex].title} by {props.songs[props.nextSongIndex].artist}</span></p>
-            <p className="advice"> ⚠️ Advice </p>
-            <p className="align-right">
+            <Controls className="control" isPlaying={isPlaying} setIsPlaying={setIsPlaying} SkipSong={SkipSong} />
+            <div className="bars">
+                <Audiobars /> 
+            </div>
+            <p className='text-center'>Next up: <span>{props.songs[props.nextSongIndex].title} by {props.songs[props.nextSongIndex].artist}</span></p>
+            <p className="advice"> ⚠️ Advice: </p>
+            <p className="blockquote quote">
             When listening to binaural beats, it's best to sit in a comfortable place free of distractions. 
-            Listening to the binaural beat audio for at least 30 minutes each day in your headphones ensures 
+            Listening to the binaural beat audio  at least 30 minutes each day in your headphones ensures 
             that the rhythm is entrained (has fallen into synchronization) throughout the brain.
             </p>
         </div>
