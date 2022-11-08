@@ -20,6 +20,7 @@
 
 /* frame del slider de trabajo */
 .slider{
+    margin-left: ;
     height: 40px;
     border: 2px solid var(--red);
     border-radius: 20px;

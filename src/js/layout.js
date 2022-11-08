@@ -7,11 +7,13 @@ import { Login } from "./views/login";
 import { Perfil } from "./views/perfil";
 import { Agenda } from "./views/agenda";
 import { Slideshow } from "./views/carousel";
+import { Under } from "./views/under_construction";
 
 import { Single } from "./views/single";
 import { App } from "../js/component/circle_pomodoro_timer/App01.js";
 import { Applayer } from "./views/playermode.js";
 import { Forgot_view } from "./views/forgot_password";
+
 
 import injectContext from "./store/appContext";
 import ScrollToTop from "./component/scrollToTop";
@@ -61,6 +63,10 @@ const Layout = () => {
 						<Route exact path="/playermode">
 							<Applayer />
 						</Route>	
+
+						<Route exact path="/under_construction">
+							<Under />
+						</Route>
 						
 						<Route exact path="/single/:theid">
 							<Single />

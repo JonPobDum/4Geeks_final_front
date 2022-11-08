@@ -10,13 +10,13 @@ function Settings() {
   const settingsInfo = useContext(SettingsContext);
   return(
     // Estilos para posicionar los Settings de Work/BreaK
-    <div style={{textAlign:'left'}}>
+    <div style={{textAlign:'left'}} className="position-relative gap-4">
       {/* Titulo de controles de trabajo */}
        {/* el :00 es para mostrar que son minutos exactos */}
       <label>work: {settingsInfo.workMinutes}:00</label>
       {/* detalles del componenete Slider */}
       <ReactSlider
-        className={'slider'}
+        className={'slider position-absolute top-20 start-50 translate-middle'}
         thumbClassName={'thumb'}
         trackClassName={'track'}
         // variable que recoge el valor de los minutos de trabajo
@@ -33,7 +33,7 @@ function Settings() {
       <label>break: {settingsInfo.breakMinutes}:00</label>
       <ReactSlider
         // clase para el boton de descanzo
-        className={'slider green'}
+        className={'slider green position-absolute top-40 start-50 translate-middle'}
         thumbClassName={'thumb'}
         trackClassName={'track'}
         // variable que recoge el valor de los minutos de descanzo

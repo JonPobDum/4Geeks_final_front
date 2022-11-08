@@ -81,7 +81,7 @@ function Timer() {
         pathColor:mode === 'work' ? red : green,
         //Color del progreso del circulo
         tailColor:'rgba(255,255,255,.2)',
-      })} />
+      })} className="ms-4"/>
 
       {/* Posicionamiento del Boton Timer */}
       <div style={{marginTop:'20px'}}>
@@ -95,8 +95,8 @@ function Timer() {
 
       {/* Componente de botón de Settings */}
       {/* Posicionamiento del Boton de Settings */}
-      <div style={{marginTop:'20px'}}>
-        <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
+      <div style={{marginTop:'20px'}} className="">
+        <SettingsButton   onClick={() => settingsInfo.setShowSettings(true)} />
       </div>
     </div>
   );

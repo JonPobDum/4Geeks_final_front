@@ -32,6 +32,7 @@
     text-align: center;
     height: 50px;
     width: 50px;
+    align-items: center;
   }
   /* styles de botones tanto de play como de pause */
   button{
@@ -78,3 +79,7 @@
   .settings_1{
     margin-left: 100px;
   }
+
+.Setbutton {
+ justify-content: center;
+}
