@@ -137,14 +137,14 @@ box-shadow: 26px 20px 5px 0px rgba(0,0,0,0.75);
 }
 
 .h1_agenda {
-    margin-left: 10%;
+    margin-left: 21%;
     font-family: cursive;
     font-size: 30px;
     color: var(--title);
 }
 
 .input_agenda{
-    width: 80%;
+    width: 95%;
     margin-left: 10px;
 }
 
