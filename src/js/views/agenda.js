@@ -26,6 +26,16 @@ export const Agenda = () => {
 
   useEffect(() => {
     getTask();
+   // NO PUEDES VER LA VISTA AL MENOS QUE TENGAS TOKEN
+      //   if(localStorage.getItem("token")){
+      //     alert("Bienvenido!")
+      //       history.push("/todolist")
+      //     }
+      // else{
+      //     history.push("/")
+      // }
+
+
   }, []);
 
   /*TODO LIST */

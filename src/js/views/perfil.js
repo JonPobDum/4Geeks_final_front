@@ -12,7 +12,7 @@ export const Perfil = () =>{
     useEffect(()=>{
         // NO PUEDES VER LA VISTA AL MENOS QUE TENGAS TOKEN
       //   if(localStorage.getItem("token")){
-      //     alert("Bienvenido!")
+      //     alert("Bienvenido a Brain Manager !!")
       //       history.push("/perfil")
       //     }
       // else{
